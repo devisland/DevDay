@@ -1,0 +1,357 @@
+﻿/*	Less Framework 4
+	http://lessframework.com
+	by Joni Korpi
+	License: http://opensource.org/licenses/mit-license.php	*/
+
+
+/*	Resets
+	------	*/
+
+html, body, div, span, object, iframe, h1, h2, h3, h4, h5, h6, 
+p, blockquote, pre, a, abbr, address, cite, code, del, dfn, em, 
+img, ins, kbd, q, samp, small, strong, sub, sup, var, b, i, hr, 
+dl, dt, dd, ol, ul, li, fieldset, form, label, legend, 
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, figure, figcaption, hgroup, 
+menu, footer, header, nav, section, summary, time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+}
+
+article, aside, canvas, figure, figure img, figcaption, hgroup,
+footer, header, nav, section, audio, video {
+	display: block;
+}
+
+a img {border: 0;}
+
+
+
+/*	Typography presets
+	------------------	*/
+
+.gigantic {
+	font-size: 110px;
+	line-height: 120px;
+	letter-spacing: -2px;
+}
+
+.huge, h1 {
+	font-size: 68px;
+	line-height: 72px;
+	letter-spacing: -1px;
+	color: #09f;
+	text-shadow: 1px 1px 2px #fff, -1px -1px -2px #333;
+}
+
+.large, h2 {
+	font-size: 42px;
+	line-height: 48px;
+	color: #09f;
+	text-shadow: 1px 1px 2px #fff, -1px -1px -2px #333;
+}
+
+.bigger, h3 {
+	margin:18px 0 18px 0;
+	font-size: 26px;
+	line-height: 36px;
+	color: #09f;
+	text-shadow: 1px 1px 2px #fff, -1px -1px -2px #333;
+}
+
+.big, h4 {
+	margin:15px 0 15px 0;
+	font-size: 22px;
+	line-height: 30px;
+	color: #09f;
+	text-shadow: 1px 1px 2px #fff, -1px -1px -2px #333;
+}
+
+body {
+	font: 16px/24px Verdana, Georgia, serif;
+}
+
+.small, small {
+	font-size: 13px;
+	line-height: 18px;
+}
+
+/* Selection colours (easy to forget) */
+
+::selection 	 	{background: rgb(255,255,158);}
+::-moz-selection 	{background: rgb(255,255,158);}
+img::selection 		{background: transparent;}
+img::-moz-selection	{background: transparent;}
+body {-webkit-tap-highlight-color: rgb(255,255,158);}
+
+
+
+/*		Default Layout: 992px. 
+		Gutters: 24px.
+		Outer margins: 48px.
+		Leftover space for scrollbars @1024px: 32px.
+-------------------------------------------------------------------------------
+cols    1     2      3      4      5      6      7      8      9      10
+px      68    160    252    344    436    528    620    712    804    896    */
+
+body {
+	padding: 72px 0 84px;
+	position: relative;
+	background: rgb(232,232,232);
+	background: -moz-radial-gradient(center, #E1E7EB, #BBBFC2) no-repeat;
+	background: -webkit-gradient(radial, 50% 10%, 0, 50% 10%, 500, from(#E1E7EB), to(#BBBFC2)) no-repeat;
+	color: rgb(60,60,60);
+	-webkit-text-size-adjust: 100%; /* Stops Mobile Safari from auto-adjusting font-sizes */
+}
+
+hr {
+	border: none;
+	border-top: 1px solid #3c3c3c;
+	clear: both;
+	margin-bottom:20px;
+}
+
+.clear { clear: both; }
+
+header, nav, section, footer {
+	padding-left: 48px;
+	padding-right: 48px;
+	margin: 0 auto;
+	width: 896px;
+	position: relative;
+}
+
+header {
+	height: 165px;
+}
+
+#title {
+	float: right;
+	text-align:right;
+}
+
+#logo {
+	float: left;
+}
+
+nav {
+	padding-top: 24px;
+	padding-bottom: 24px;
+}
+
+nav, footer {
+	text-align: center;
+}
+
+nav > ul {
+	list-style-type: none;
+}
+
+nav > ul > li {
+	display: inline-block;
+	margin: 5px 0 5px 0;
+	background-color: #0099ff;
+	-webkit-border-radius: 20px;
+	-moz-border-radius: 20px;
+	border-radius: 20px;
+}
+
+nav a {
+	display:block;
+	color:#000000;
+	text-decoration:none;
+	text-transform:uppercase;
+	/*-webkit-transform: rotate(-30deg);
+	-moz-transform: translateY(-15px) rotate(-30deg);
+	transform: rotate(-30deg);*/
+	font-weight:bold;
+	background-color: #ffcc00;
+	width: 150px;
+	margin: 5px;
+	border: 2px solid #ffffff;
+	-webkit-border-radius: 10px;
+	-moz-border-radius: 10px;
+	border-radius: 10px;
+}
+
+nav li:hover {
+	-webkit-box-shadow: 0 0 5px 2px #0099ff;
+	-moz-box-shadow: 0 0 5px 2px #09f;
+	box-shadow: 0 0 5px 2px #0099ff;
+}
+
+section h2 {
+	margin-bottom: 12px;
+}
+
+footer {
+	margin-top: 68px;
+	background-color:#fff;
+	-webkit-opacity: 0.7;
+	-moz-opacity: 0.7;
+	opacity: 0.7;
+}
+
+article, #exemploDivulgue, #copieColeDivulgue {
+	margin-top: 20px;
+}
+
+#exemploDivulgue {
+	width: 436px;
+	float: left;
+}
+
+#copieColeDivulgue {
+	width: 344px;
+	float: right;
+}
+
+#copieColeDivulgue textarea {
+	width: 344px;
+	height: 150px;
+}
+
+.polaroid {
+	margin: 5px;
+	margin-bottom:20px;
+	border: 10px solid #FFF;
+	border-bottom: 40px solid #FFF;
+	-webkit-box-shadow: 0 2px 5px rgba(0, 0, 0, 0.7);
+	-moz-box-shadow: 0 2px 5px rgba(0, 0, 0, 0.7);
+	box-shadow: 0 2px 5px rgba(0, 0, 0, 0.7);
+}
+
+.palestrante {
+	width: 100px;
+	margin-bottom: 5px;
+	margin-left: 5px;
+	border-bottom: 30px solid #FFF;
+	float:left;
+}
+
+#patrocinadoresOuro {
+	list-style:none;
+}
+#patrocinadoresOuro li {
+	float:left;
+}
+#patrocinadoresOuro a {
+	display:block;
+	margin: 5px;
+}
+#patrocinadoresOuro img {
+	max-width:200px;
+}
+
+/*		Tablet Layout: 768px.
+		Gutters: 24px.
+		Outer margins: 28px.
+		Inherits styles from: Default Layout.
+-----------------------------------------------------------------
+cols    1     2      3      4      5      6      7      8
+px      68    160    252    344    436    528    620    712    */
+
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+	
+	body {
+		padding: 48px 0 72px;
+	}
+	
+	header, nav, section, footer {
+		padding-left: 28px;
+		padding-right: 28px;
+		width: 712px;
+	}
+}
+
+
+/*		Mobile Layout: 320px.
+		Gutters: 24px.
+		Outer margins: 34px.
+		Inherits styles from: Default Layout.
+---------------------------------------------
+cols    1     2      3
+px      68    160    252    */
+
+@media only screen and (max-width: 479px) {
+	
+	body {
+		padding: 24px 0 60px;
+	}
+	
+	header, nav, section, footer {
+		padding-left: 34px;
+		padding-right: 34px;
+		width: 252px;
+	}
+	
+	nav li {
+		margin-bottom: 5px;
+	}
+	
+	header {
+		height: auto;
+	}
+	
+	#title {
+		float: none;
+		text-align:center;
+	}
+
+	#logo {
+		float: none;
+	}
+	
+	#mapa{ display:none; }
+	
+	figure img {
+		width: 252px;
+	}
+}
+
+
+/*		Wide Mobile Layout: 480px.
+		Gutters: 24px.
+		Outer margins: 22px.
+		Inherits styles from: Default Layout, Mobile Layout.
+------------------------------------------------------------
+cols    1     2      3      4      5
+px      68    160    252    344    436    */
+
+@media only screen and (min-width: 480px) and (max-width: 767px) {
+	
+	body {
+		padding: 24px 0 48px;
+	}
+	
+	header, nav, section, footer {
+		padding-left: 22px;
+		padding-right: 22px;
+		width: 436px;
+	}
+	
+	header {
+		height: auto;
+		text-align: center;
+	}
+	
+	#title {
+		float: none;
+		text-align:center;
+	}
+
+	#logo {
+		float: none;
+	}
+	
+	nav li {
+		margin-bottom: 5px;
+	}
+	
+	#mapa{ display:none; }
+	
+	figure img {
+		width: 436px;
+	}
+}
