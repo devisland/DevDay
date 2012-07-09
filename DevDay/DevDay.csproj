@@ -79,6 +79,7 @@
     <Compile Include="Controllers\InscricoesController.cs" />
     <Compile Include="Controllers\LocalController.cs" />
     <Compile Include="Controllers\PalestrantesController.cs" />
+    <Compile Include="Controllers\PalestrasController.cs" />
     <Compile Include="Controllers\PatrocinadoresController.cs" />
     <Compile Include="Controllers\PatrocinioController.cs" />
     <Compile Include="Global.asax.cs">
@@ -143,6 +144,9 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="Views\Patrocinadores\Index.cshtml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Views\Palestras\Index.cshtml" />
   </ItemGroup>
   <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
   <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v10.0\WebApplications\Microsoft.WebApplication.targets" />
