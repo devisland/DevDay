@@ -88,20 +88,23 @@
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
-    <Content Include="Content\css\bootstrap-responsive.css" />
-    <Content Include="Content\css\bootstrap-responsive.min.css" />
     <Content Include="Content\css\bootstrap.css" />
     <Content Include="Content\css\bootstrap.min.css" />
+    <Content Include="Content\css\font-awesome-ie7.css" />
+    <Content Include="Content\css\font-awesome.css" />
+    <Content Include="Content\css\portfolio.css" />
+    <Content Include="Content\font\fontawesome-webfont.svg" />
     <Content Include="Content\img\glyphicons-halflings-white.png" />
     <Content Include="Content\img\glyphicons-halflings.png" />
+    <Content Include="Content\img\headerbg.jpg" />
+    <Content Include="Content\js\bootstrap.js" />
+    <Content Include="Content\js\bootstrap.min.js" />
+    <Content Include="Content\js\contact.js" />
+    <Content Include="Content\js\jquery.flot.min.js" />
+    <Content Include="Content\js\jquery.ui.map.js" />
     <Content Include="favicon.ico" />
     <Content Include="Global.asax" />
     <Content Include="google33ca6db648dcd0a6.html" />
-    <Content Include="Scripts\bootstrap.js" />
-    <Content Include="Scripts\bootstrap.min.js" />
-    <Content Include="Scripts\jquery-1.7.2.js" />
-    <Content Include="Scripts\jquery-1.7.2.min.js" />
-    <Content Include="Scripts\modernizr-2.5.2.min.js" />
     <Content Include="Web.config">
       <SubType>Designer</SubType>
     </Content>
@@ -147,6 +150,11 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="Views\Palestras\Index.cshtml" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Content\font\fontawesome-webfont.eot" />
+    <None Include="Content\font\fontawesome-webfont.ttf" />
+    <None Include="Content\font\fontawesome-webfont.woff" />
   </ItemGroup>
   <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
   <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v10.0\WebApplications\Microsoft.WebApplication.targets" />
