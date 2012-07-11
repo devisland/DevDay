@@ -81,7 +81,6 @@
     <Compile Include="Controllers\PalestrantesController.cs" />
     <Compile Include="Controllers\PalestrasController.cs" />
     <Compile Include="Controllers\PatrocinadoresController.cs" />
-    <Compile Include="Controllers\PatrocinioController.cs" />
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
@@ -94,6 +93,7 @@
     <Content Include="Content\css\font-awesome.css" />
     <Content Include="Content\css\portfolio.css" />
     <Content Include="Content\font\fontawesome-webfont.svg" />
+    <Content Include="Content\img\devday2011.jpg" />
     <Content Include="Content\img\glyphicons-halflings-white.png" />
     <Content Include="Content\img\glyphicons-halflings.png" />
     <Content Include="Content\img\headerbg.jpg" />
@@ -143,9 +143,6 @@
     <Content Include="Views\Divulgue\Index.cshtml" />
   </ItemGroup>
   <ItemGroup>
-    <Content Include="Views\Patrocinio\Index.cshtml" />
-  </ItemGroup>
-  <ItemGroup>
     <Content Include="Views\Patrocinadores\Index.cshtml" />
   </ItemGroup>
   <ItemGroup>
@@ -171,12 +168,11 @@
     <VisualStudio>
       <FlavorProperties GUID="{349c5851-65df-11da-9384-00065b846f21}">
         <WebProjectProperties>
-          <UseIIS>False</UseIIS>
+          <UseIIS>True</UseIIS>
           <AutoAssignPort>True</AutoAssignPort>
           <DevelopmentServerPort>45478</DevelopmentServerPort>
           <DevelopmentServerVPath>/</DevelopmentServerVPath>
-          <IISUrl>
-          </IISUrl>
+          <IISUrl>http://localhost/DevDay</IISUrl>
           <NTLMAuthentication>False</NTLMAuthentication>
           <UseCustomServer>False</UseCustomServer>
           <CustomServerUrl>
