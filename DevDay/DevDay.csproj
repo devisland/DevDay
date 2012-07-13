@@ -87,21 +87,29 @@
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
-    <Content Include="Content\css\bootstrap-responsive.css" />
-    <Content Include="Content\css\bootstrap-responsive.min.css" />
     <Content Include="Content\css\bootstrap.css" />
     <Content Include="Content\css\bootstrap.min.css" />
     <Content Include="Content\css\font-awesome-ie7.css" />
     <Content Include="Content\css\font-awesome.css" />
     <Content Include="Content\css\portfolio.css" />
     <Content Include="Content\font\fontawesome-webfont.svg" />
+    <Content Include="Content\img\auditorio1.jpg" />
+    <Content Include="Content\img\auditorio2.jpg" />
+    <Content Include="Content\img\auditorio3.jpg" />
+    <Content Include="Content\img\auditorio4.jpg" />
+    <Content Include="Content\img\auditorio5.jpg" />
+    <Content Include="Content\img\auditorio6.jpg" />
+    <Content Include="Content\img\auditorio7.jpg" />
     <Content Include="Content\img\devday2011.jpg" />
     <Content Include="Content\img\glyphicons-halflings-white.png" />
     <Content Include="Content\img\glyphicons-halflings.png" />
     <Content Include="Content\img\headerbg.jpg" />
+    <Content Include="Content\img\social-facebook-box-white-icon.png" />
+    <Content Include="Content\img\social-twitter-box-white-icon.png" />
     <Content Include="Content\js\bootstrap.js" />
     <Content Include="Content\js\bootstrap.min.js" />
     <Content Include="Content\js\contact.js" />
+    <Content Include="Content\js\divulgue.js" />
     <Content Include="Content\js\jquery.flot.min.js" />
     <Content Include="Content\js\jquery.ui.map.js" />
     <Content Include="favicon.ico" />
@@ -170,7 +178,7 @@
     <VisualStudio>
       <FlavorProperties GUID="{349c5851-65df-11da-9384-00065b846f21}">
         <WebProjectProperties>
-          <UseIIS>True</UseIIS>
+          <UseIIS>False</UseIIS>
           <AutoAssignPort>True</AutoAssignPort>
           <DevelopmentServerPort>45478</DevelopmentServerPort>
           <DevelopmentServerVPath>/</DevelopmentServerVPath>
