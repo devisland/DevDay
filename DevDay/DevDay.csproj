@@ -100,6 +100,8 @@
     <Content Include="Content\img\auditorio5.jpg" />
     <Content Include="Content\img\auditorio6.jpg" />
     <Content Include="Content\img\auditorio7.jpg" />
+    <Content Include="Content\img\devday.png" />
+    <Content Include="Content\img\devday2.png" />
     <Content Include="Content\img\devday2011.jpg" />
     <Content Include="Content\img\glyphicons-halflings-white.png" />
     <Content Include="Content\img\glyphicons-halflings.png" />
