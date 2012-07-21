@@ -7,7 +7,7 @@ p {
 
 h1, h2, h3, h4, h5, h6 {
 	font-weight: normal;
-	font-family: "Oxygen", sans-serif;
+	font-family: helvetica, "Oxygen", sans-serif;
 	margin-bottom: 10px;
 }
 
@@ -38,7 +38,7 @@ h1, h2, h3, h4, h5, h6 {
 .masthead .nav li {
 	margin-left: 10px;
 	font-weight: normal;
-	font-family: "Oxygen", sans-serif;
+	font-family: helvetica, "Oxygen", sans-serif;
 }
 
 /* Slideshow */
@@ -59,7 +59,7 @@ h1, h2, h3, h4, h5, h6 {
 	color: #FFF;
 	font-size: 36px;
 	font-weight: thin;
-	font-family: "Oxygen", sans-serif;
+	font-family: helvetica, "Oxygen", sans-serif;
 }
 
 /* Columns */
@@ -219,4 +219,14 @@ h1, h2, h3, h4, h5, h6 {
 
 .carousel .item3 {
 	background: #a80f0f;
+}
+
+#shareontwitter 
+{
+    width: 100px;
+}
+
+#shareonfacebook 
+{
+    width: 100px;
 }
