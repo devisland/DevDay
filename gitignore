@@ -5,8 +5,8 @@
 *.sln.cache
 *.suo
 *.csproj.user
-DevDay/*/bin
-DevDay/*/obj
+bin/
+obj/
 
 # Resharper
 *[Rr]e[Ss]harper.user
