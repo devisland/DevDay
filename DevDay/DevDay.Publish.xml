@@ -45,7 +45,7 @@
     <file relUrl="Content/js/galleria/plugins/flickr/galleria.flickr.min.js" publishTime="07/21/2012 12:51:41" />
     <file relUrl="Content/js/galleria/plugins/picasa/galleria.picasa.js" publishTime="07/21/2012 12:51:41" />
     <file relUrl="Content/js/jquery.ui.map.js" publishTime="06/10/2012 12:38:30" />
-    <file relUrl="Views/Palestras/Index.cshtml" publishTime="07/12/2012 23:48:40" />
+    <file relUrl="Views/Palestras/Index.cshtml" publishTime="07/21/2012 13:30:16" />
     <file relUrl="packages.config" publishTime="07/08/2012 21:54:58" />
     <file relUrl="Content/img/glyphicons-halflings.png" publishTime="06/06/2012 13:22:32" />
     <file relUrl="Content/js/galleria/themes/classic/galleria.classic.min.js" publishTime="07/21/2012 12:51:41" />
@@ -81,7 +81,7 @@
     <file relUrl="Views/Gallery/Index.cshtml" publishTime="07/21/2012 12:51:41" />
     <file relUrl="Content/img/auditorio1.jpg" publishTime="07/12/2012 23:48:40" />
     <file relUrl="Content/img/headerbg.jpg" publishTime="06/07/2012 14:15:46" />
-    <file relUrl="Views/Home/Index.cshtml" publishTime="07/21/2012 12:56:54" />
+    <file relUrl="Views/Home/Index.cshtml" publishTime="07/21/2012 13:30:09" />
     <file relUrl="Content/js/galleria/themes/classic/classic-map.png" publishTime="07/21/2012 12:51:41" />
     <file relUrl="Content/js/galleria/plugins/picasa/galleria.picasa.min.js" publishTime="07/21/2012 12:51:41" />
     <file relUrl="bin/System.Web.WebPages.Deployment.dll" publishTime="01/05/2011 15:45:38" />
