@@ -73,8 +73,10 @@
     <Reference Include="System.EnterpriseServices" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Controllers\ContatoController.cs" />
     <Compile Include="Controllers\DivulgueController.cs" />
     <Compile Include="Controllers\AgendaController.cs" />
+    <Compile Include="Controllers\GalleryController.cs" />
     <Compile Include="Controllers\HomeController.cs" />
     <Compile Include="Controllers\InscricoesController.cs" />
     <Compile Include="Controllers\LocalController.cs" />
@@ -106,14 +108,36 @@
     <Content Include="Content\img\glyphicons-halflings-white.png" />
     <Content Include="Content\img\glyphicons-halflings.png" />
     <Content Include="Content\img\headerbg.jpg" />
+    <Content Include="Content\js\galleria\plugins\facebook\loader.gif" />
     <Content Include="Content\img\social-facebook-box-white-icon.png" />
     <Content Include="Content\img\social-twitter-box-white-icon.png" />
     <Content Include="Content\js\bootstrap.js" />
     <Content Include="Content\js\bootstrap.min.js" />
     <Content Include="Content\js\contact.js" />
     <Content Include="Content\js\divulgue.js" />
+    <Content Include="Content\js\galleria\galleria-1.2.7.js" />
+    <Content Include="Content\js\galleria\galleria-1.2.7.min.js" />
+    <Content Include="Content\js\galleria\plugins\facebook\galleria.facebook.js" />
     <Content Include="Content\js\jquery.flot.min.js" />
     <Content Include="Content\js\jquery.ui.map.js" />
+    <Content Include="Content\js\galleria\plugins\flickr\flickr-demo.html" />
+    <Content Include="Content\js\galleria\plugins\flickr\flickr-loader.gif" />
+    <Content Include="Content\js\galleria\plugins\flickr\galleria.flickr.js" />
+    <Content Include="Content\js\galleria\plugins\flickr\galleria.flickr.min.js" />
+    <Content Include="Content\js\galleria\plugins\flickr\loader.gif" />
+    <Content Include="Content\js\galleria\plugins\history\galleria.history.js" />
+    <Content Include="Content\js\galleria\plugins\history\galleria.history.min.js" />
+    <Content Include="Content\js\galleria\plugins\history\history-demo.html" />
+    <Content Include="Content\js\galleria\plugins\picasa\galleria.picasa.js" />
+    <Content Include="Content\js\galleria\plugins\picasa\galleria.picasa.min.js" />
+    <Content Include="Content\js\galleria\plugins\picasa\loader.gif" />
+    <Content Include="Content\js\galleria\plugins\picasa\picasa-demo.html" />
+    <Content Include="Content\js\galleria\themes\classic\classic-demo.html" />
+    <Content Include="Content\js\galleria\themes\classic\classic-loader.gif" />
+    <Content Include="Content\js\galleria\themes\classic\classic-map.png" />
+    <Content Include="Content\js\galleria\themes\classic\galleria.classic.css" />
+    <Content Include="Content\js\galleria\themes\classic\galleria.classic.js" />
+    <Content Include="Content\js\galleria\themes\classic\galleria.classic.min.js" />
     <Content Include="favicon.ico" />
     <Content Include="Global.asax" />
     <Content Include="google33ca6db648dcd0a6.html" />
@@ -164,6 +188,8 @@
     <None Include="Content\font\fontawesome-webfont.eot" />
     <None Include="Content\font\fontawesome-webfont.ttf" />
     <None Include="Content\font\fontawesome-webfont.woff" />
+    <Content Include="Views\Contato\Index.cshtml" />
+    <Content Include="Views\Gallery\Index.cshtml" />
   </ItemGroup>
   <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
   <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v10.0\WebApplications\Microsoft.WebApplication.targets" />

@@ -44,19 +44,34 @@ see http://www.gnu.org/licenses/.
                 <li>@Html.ActionLink("Local", "Index", "Local")</li>
                 <li>@Html.ActionLink("Agenda", "Index", "Agenda")</li>
                 <li>@Html.ActionLink("Patrocinadores", "Index", "Patrocinadores")</li>
+                <li>@Html.ActionLink("Contato", "Index", "Contato")</li>
                 <li>@Html.ActionLink("Divulgue", "Index", "Divulgue")</li>
             </ul>
         </div>
         @RenderBody()
     </div>
     <div class="footer">
-        <div class="container">
-            &copy; DevIsland 2012
+        <div id="fb-root">
         </div>
-    </div>
-    <script src="http://code.jquery.com/jquery.min.js" type="text/javascript"></script>
-    <script src="@Url.Content("~/Content/js/bootstrap.js")" type="text/javascript"></script>
-    <script src="@Url.Content("~/Content/js/jquery.ui.map.js")" type="text/javascript"></script>
-    @RenderSection("js", false)
+        <div class="container">
+            <div class="fb-like" data-href="https://www.facebook.com/DevIsland" data-send="false"
+                data-width="650" data-show-faces="true" data-action="recommend">
+            </div>
+            <div>
+                &copy; DevIsland 2012
+            </div>
+        </div>
+        <script src="http://code.jquery.com/jquery.min.js" type="text/javascript"></script>
+        <script src="@Url.Content("~/Content/js/bootstrap.js")" type="text/javascript"></script>
+        <script src="@Url.Content("~/Content/js/jquery.ui.map.js")" type="text/javascript"></script>
+        @RenderSection("js", false)
+        <script type="text/javascript">
+            (function (d, s, id) {
+                var js, fjs = d.getElementsByTagName(s)[0];
+                if (d.getElementById(id)) return;
+                js = d.createElement(s); js.id = id;
+                js.src = "//connect.facebook.net/pt_BR/all.js#xfbml=1&appId=255164787916716";
+                fjs.parentNode.insertBefore(js, fjs);
+            } (document, 'script', 'facebook-jssdk'));</script>
 </body>
 </html>
