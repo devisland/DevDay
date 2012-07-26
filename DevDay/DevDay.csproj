@@ -108,6 +108,11 @@
     <Content Include="Content\img\glyphicons-halflings-white.png" />
     <Content Include="Content\img\glyphicons-halflings.png" />
     <Content Include="Content\img\headerbg.jpg" />
+    <Content Include="Content\img\patrocinadores\apoio\logohoraextrabh.png" />
+    <Content Include="Content\img\patrocinadores\apoio\logopangea.jpg" />
+    <Content Include="Content\img\patrocinadores\apoio\logopythonmg.png" />
+    <Content Include="Content\img\patrocinadores\ouro\logoarkhi.jpg" />
+    <Content Include="Content\img\patrocinadores\ouro\logouna.jpg" />
     <Content Include="Content\js\galleria\plugins\facebook\loader.gif" />
     <Content Include="Content\img\social-facebook-box-white-icon.png" />
     <Content Include="Content\img\social-twitter-box-white-icon.png" />
@@ -158,6 +163,8 @@
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
+    <Folder Include="Content\img\patrocinadores\bronze\" />
+    <Folder Include="Content\img\patrocinadores\prata\" />
     <Folder Include="Models\" />
   </ItemGroup>
   <ItemGroup>
@@ -185,6 +192,7 @@
     <Content Include="Views\Palestras\Index.cshtml" />
   </ItemGroup>
   <ItemGroup>
+    <None Include="Content\download\DevDay2012.pdf" />
     <None Include="Content\font\fontawesome-webfont.eot" />
     <None Include="Content\font\fontawesome-webfont.ttf" />
     <None Include="Content\font\fontawesome-webfont.woff" />
