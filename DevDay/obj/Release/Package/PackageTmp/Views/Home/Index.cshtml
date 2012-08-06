@@ -1,0 +1,82 @@
+﻿<!--
+Copyright 2011 Douglas Aguiar<doaguiar@gmail.com>
+Copyright 2012 Douglas Aguiar<doaguiar@gmail.com>, Glauco Vinicius<gl4uc0@gmail.com>, Gibran Silva <gibran.silva@gmail.com>, Renato Saito <renato.saito@live.com>
+
+This file is part of DevDay website.
+
+DevDay website is free software: you can redistribute it and/or modify it under the terms of the GNU General Public
+License as published by the Free Software Foundation, either version 3 of the License, or (at your option) any later
+version.
+
+DevDay website is distributed in the hope that it will be useful, but WITHOUT ANY WARRANTY; without even the implied
+warranty of MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE. See the GNU General Public License for more details.
+
+You should have received a copy of the GNU General Public License along with DevDay website. If not,
+see http://www.gnu.org/licenses/.
+-->
+@{
+    ViewBag.Title = "DevDay 2012 - Belo Horizonte #DevDay";
+}
+<!-- Main hero unit for a primary marketing message or call to action -->
+<div id="myCarousel" class="carousel slide">
+    <!-- Carousel items -->
+    <div class="carousel-inner">
+        <div class="active item item1" style="background-image:url(@Url.Content("~/Content/img/devday2011.jpg")); background-repeat:no-repeat;" >
+            <p class="caption" style="line-height: 1;color: Black; ">
+                DEVELOPERS!!! WHAT'S YOUR PROFESSION?!?!
+                <br />
+                <strong style="color: Black">- 20 DE OUTUBRO -</strong></p>
+        </div>
+        <div class="item item1">
+            <br />
+            <p class="caption">
+                O evento de desenvolvedores para desenvolvedores está de volta!</p>
+            <p>
+        </div>
+        <div class="item item2">
+            <p class="caption">
+                #DevIsland</p>
+        </div>
+        <div class="item item3">
+            <p class="caption">
+                #HoraExtraBH</p>
+        </div>
+    </div>
+    <!-- Carousel nav -->
+    <a class="carousel-control left" href="#myCarousel" data-slide="prev">&lsaquo;</a> <a class="carousel-control right"
+        href="#myCarousel" data-slide="next">&rsaquo;</a>
+    <br />
+    <div class="row home-columns">
+        <div class="span4 home-column clearfix">
+            <i class="icon-share pull-left"></i>
+            <div class="content">
+                <h2>
+                    Submeter sua Palestra</h2>
+                <p>
+                    Participe, contribua e ajude a construir este evento. Tem ideia para alguma palestra? Quer participar,
+                    mas não consegue palestrar? Envie sua proposta de palestra ou lightning talk até 15/08. <a href="@Url.Action("Index", "Palestras")">
+                        Faça a diferença na nossa comunidade!</a></p>
+            </div>
+        </div>
+        <div class="span4 home-column clearfix">
+            <i class="icon-edit pull-left"></i>
+            <div class="content">
+                <h2>
+                    Inscrições</h2>
+                <p>
+                    Fique ligado nas datas das inscrições. Não perca tempo e seja o primeiro a fazer a diferença! <a href="@Url.Action("Index", "Inscricoes")">
+                        Faça já a sua.</a></p>
+            </div>
+        </div>
+        <div class="span4 home-column clearfix">
+            <i class="icon-map-marker pull-left"></i>
+            <div class="content">
+                <h2>
+                    Local</h2>
+                <p>
+                    O evento será onde vocês já conhecem, no Auditório da UNA Aimorés. <a href="@Url.Action("Index", "Local")">
+                        Confira.</a></p>
+            </div>
+        </div>
+    </div>
+</div>

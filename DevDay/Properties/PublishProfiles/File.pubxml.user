@@ -1,0 +1,284 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<!--
+This file is used by the publish/package process of your Web project. You can customize the behavior of this process
+by editing this MSBuild file. In order to learn more about this please visit http://go.microsoft.com/fwlink/?LinkID=208121. 
+-->
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <LastUsedBuildConfiguration>Release</LastUsedBuildConfiguration>
+    <LastUsedPlatform>Any CPU</LastUsedPlatform>
+    <TimeStampOfAssociatedLegacyPublishXmlFile>2012-07-30T12:05:43.5793665-03:00</TimeStampOfAssociatedLegacyPublishXmlFile>
+  </PropertyGroup>
+  <ItemGroup>
+    <File Include="bin/DevDay.dll">
+      <publishTime>08/06/2012 11:11:02</publishTime>
+    </File>
+    <File Include="bin/DevDay.pdb">
+      <publishTime>07/30/2012 11:58:22</publishTime>
+    </File>
+    <File Include="bin/Microsoft.Web.Infrastructure.dll">
+      <publishTime>04/09/2012 12:55:46</publishTime>
+    </File>
+    <File Include="bin/Microsoft.Web.Infrastructure.xml">
+      <publishTime>04/09/2012 12:55:46</publishTime>
+    </File>
+    <File Include="bin/System.Web.Helpers.dll">
+      <publishTime>01/05/2011 15:45:38</publishTime>
+    </File>
+    <File Include="bin/System.Web.Helpers.xml">
+      <publishTime>12/19/2010 23:59:38</publishTime>
+    </File>
+    <File Include="bin/System.Web.Mvc.dll">
+      <publishTime>01/05/2011 17:42:16</publishTime>
+    </File>
+    <File Include="bin/System.Web.Mvc.xml">
+      <publishTime>02/09/2011 11:26:24</publishTime>
+    </File>
+    <File Include="bin/System.Web.Razor.dll">
+      <publishTime>01/05/2011 15:45:38</publishTime>
+    </File>
+    <File Include="bin/System.Web.Razor.xml">
+      <publishTime>12/20/2010 10:52:36</publishTime>
+    </File>
+    <File Include="bin/System.Web.WebPages.Deployment.dll">
+      <publishTime>01/05/2011 15:45:38</publishTime>
+    </File>
+    <File Include="bin/System.Web.WebPages.Deployment.xml">
+      <publishTime>12/20/2010 10:52:36</publishTime>
+    </File>
+    <File Include="bin/System.Web.WebPages.dll">
+      <publishTime>01/05/2011 15:45:38</publishTime>
+    </File>
+    <File Include="bin/System.Web.WebPages.Razor.dll">
+      <publishTime>01/05/2011 15:45:38</publishTime>
+    </File>
+    <File Include="bin/System.Web.WebPages.Razor.xml">
+      <publishTime>12/20/2010 10:52:36</publishTime>
+    </File>
+    <File Include="bin/System.Web.WebPages.xml">
+      <publishTime>12/19/2010 23:59:38</publishTime>
+    </File>
+    <File Include="Content/css/bootstrap.css">
+      <publishTime>07/27/2012 23:45:02</publishTime>
+    </File>
+    <File Include="Content/css/bootstrap.min.css">
+      <publishTime>06/09/2012 23:21:58</publishTime>
+    </File>
+    <File Include="Content/css/font-awesome-ie7.css">
+      <publishTime>06/05/2012 13:24:28</publishTime>
+    </File>
+    <File Include="Content/css/font-awesome.css">
+      <publishTime>07/11/2012 02:16:09</publishTime>
+    </File>
+    <File Include="Content/css/portfolio.css">
+      <publishTime>07/25/2012 01:00:12</publishTime>
+    </File>
+    <File Include="Content/font/fontawesome-webfont.svg">
+      <publishTime>06/05/2012 13:24:28</publishTime>
+    </File>
+    <File Include="Content/img/auditorio1.jpg">
+      <publishTime>07/12/2012 23:48:40</publishTime>
+    </File>
+    <File Include="Content/img/auditorio2.jpg">
+      <publishTime>07/12/2012 23:48:40</publishTime>
+    </File>
+    <File Include="Content/img/auditorio3.jpg">
+      <publishTime>07/12/2012 23:48:40</publishTime>
+    </File>
+    <File Include="Content/img/auditorio4.jpg">
+      <publishTime>07/12/2012 23:48:40</publishTime>
+    </File>
+    <File Include="Content/img/auditorio5.jpg">
+      <publishTime>07/12/2012 23:48:40</publishTime>
+    </File>
+    <File Include="Content/img/auditorio6.jpg">
+      <publishTime>07/12/2012 23:48:40</publishTime>
+    </File>
+    <File Include="Content/img/auditorio7.jpg">
+      <publishTime>07/12/2012 23:48:40</publishTime>
+    </File>
+    <File Include="Content/img/devday.png">
+      <publishTime>07/16/2012 01:04:00</publishTime>
+    </File>
+    <File Include="Content/img/devday2.png">
+      <publishTime>07/16/2012 01:04:00</publishTime>
+    </File>
+    <File Include="Content/img/devday2011.jpg">
+      <publishTime>07/11/2012 02:17:06</publishTime>
+    </File>
+    <File Include="Content/img/glyphicons-halflings-white.png">
+      <publishTime>06/06/2012 13:22:32</publishTime>
+    </File>
+    <File Include="Content/img/glyphicons-halflings.png">
+      <publishTime>06/06/2012 13:22:32</publishTime>
+    </File>
+    <File Include="Content/img/headerbg.jpg">
+      <publishTime>06/07/2012 14:15:46</publishTime>
+    </File>
+    <File Include="Content/img/patrocinadores/apoio/logohoraextrabh.png">
+      <publishTime>07/25/2012 01:58:11</publishTime>
+    </File>
+    <File Include="Content/img/patrocinadores/apoio/logopangea.jpg">
+      <publishTime>07/25/2012 02:03:11</publishTime>
+    </File>
+    <File Include="Content/img/patrocinadores/apoio/logopythonmg.png">
+      <publishTime>07/25/2012 23:03:20</publishTime>
+    </File>
+    <File Include="Content/img/patrocinadores/ouro/logoarkhi.jpg">
+      <publishTime>07/25/2012 01:19:56</publishTime>
+    </File>
+    <File Include="Content/img/patrocinadores/ouro/logouna.jpg">
+      <publishTime>07/25/2012 01:20:47</publishTime>
+    </File>
+    <File Include="Content/img/patrocinadores/prata/logoframework.png">
+      <publishTime>08/06/2012 11:00:03</publishTime>
+    </File>
+    <File Include="Content/img/social-facebook-box-white-icon.png">
+      <publishTime>07/12/2012 23:48:40</publishTime>
+    </File>
+    <File Include="Content/img/social-twitter-box-white-icon.png">
+      <publishTime>07/12/2012 23:48:40</publishTime>
+    </File>
+    <File Include="Content/js/bootstrap.js">
+      <publishTime>06/06/2012 13:22:32</publishTime>
+    </File>
+    <File Include="Content/js/bootstrap.min.js">
+      <publishTime>06/06/2012 13:22:32</publishTime>
+    </File>
+    <File Include="Content/js/contact.js">
+      <publishTime>07/12/2012 23:48:40</publishTime>
+    </File>
+    <File Include="Content/js/divulgue.js">
+      <publishTime>07/21/2012 12:51:41</publishTime>
+    </File>
+    <File Include="Content/js/galleria/galleria-1.2.7.js">
+      <publishTime>07/21/2012 12:51:41</publishTime>
+    </File>
+    <File Include="Content/js/galleria/galleria-1.2.7.min.js">
+      <publishTime>07/21/2012 12:51:41</publishTime>
+    </File>
+    <File Include="Content/js/galleria/plugins/facebook/galleria.facebook.js">
+      <publishTime>07/21/2012 12:51:41</publishTime>
+    </File>
+    <File Include="Content/js/galleria/plugins/facebook/loader.gif">
+      <publishTime>07/21/2012 12:51:41</publishTime>
+    </File>
+    <File Include="Content/js/galleria/plugins/flickr/flickr-demo.html">
+      <publishTime>07/21/2012 12:51:41</publishTime>
+    </File>
+    <File Include="Content/js/galleria/plugins/flickr/flickr-loader.gif">
+      <publishTime>07/21/2012 12:51:41</publishTime>
+    </File>
+    <File Include="Content/js/galleria/plugins/flickr/galleria.flickr.js">
+      <publishTime>07/21/2012 12:51:41</publishTime>
+    </File>
+    <File Include="Content/js/galleria/plugins/flickr/galleria.flickr.min.js">
+      <publishTime>07/21/2012 12:51:41</publishTime>
+    </File>
+    <File Include="Content/js/galleria/plugins/flickr/loader.gif">
+      <publishTime>07/21/2012 12:51:41</publishTime>
+    </File>
+    <File Include="Content/js/galleria/plugins/history/galleria.history.js">
+      <publishTime>07/21/2012 12:51:41</publishTime>
+    </File>
+    <File Include="Content/js/galleria/plugins/history/galleria.history.min.js">
+      <publishTime>07/21/2012 12:51:41</publishTime>
+    </File>
+    <File Include="Content/js/galleria/plugins/history/history-demo.html">
+      <publishTime>07/21/2012 12:51:41</publishTime>
+    </File>
+    <File Include="Content/js/galleria/plugins/picasa/galleria.picasa.js">
+      <publishTime>07/21/2012 12:51:41</publishTime>
+    </File>
+    <File Include="Content/js/galleria/plugins/picasa/galleria.picasa.min.js">
+      <publishTime>07/21/2012 12:51:41</publishTime>
+    </File>
+    <File Include="Content/js/galleria/plugins/picasa/loader.gif">
+      <publishTime>07/21/2012 12:51:41</publishTime>
+    </File>
+    <File Include="Content/js/galleria/plugins/picasa/picasa-demo.html">
+      <publishTime>07/21/2012 12:51:41</publishTime>
+    </File>
+    <File Include="Content/js/galleria/themes/classic/classic-demo.html">
+      <publishTime>07/21/2012 12:51:41</publishTime>
+    </File>
+    <File Include="Content/js/galleria/themes/classic/classic-loader.gif">
+      <publishTime>07/21/2012 12:51:41</publishTime>
+    </File>
+    <File Include="Content/js/galleria/themes/classic/classic-map.png">
+      <publishTime>07/21/2012 12:51:41</publishTime>
+    </File>
+    <File Include="Content/js/galleria/themes/classic/galleria.classic.css">
+      <publishTime>07/21/2012 12:51:41</publishTime>
+    </File>
+    <File Include="Content/js/galleria/themes/classic/galleria.classic.js">
+      <publishTime>07/21/2012 12:51:41</publishTime>
+    </File>
+    <File Include="Content/js/galleria/themes/classic/galleria.classic.min.js">
+      <publishTime>07/21/2012 12:51:41</publishTime>
+    </File>
+    <File Include="Content/js/jquery.flot.min.js">
+      <publishTime>03/22/2011 11:30:12</publishTime>
+    </File>
+    <File Include="Content/js/jquery.ui.map.js">
+      <publishTime>06/10/2012 12:38:30</publishTime>
+    </File>
+    <File Include="favicon.ico">
+      <publishTime>07/08/2012 21:54:58</publishTime>
+    </File>
+    <File Include="Global.asax">
+      <publishTime>07/08/2012 21:54:58</publishTime>
+    </File>
+    <File Include="google33ca6db648dcd0a6.html">
+      <publishTime>07/08/2012 21:54:58</publishTime>
+    </File>
+    <File Include="packages.config">
+      <publishTime>07/08/2012 21:54:58</publishTime>
+    </File>
+    <File Include="Views/Agenda/Index.cshtml">
+      <publishTime>07/12/2012 23:48:40</publishTime>
+    </File>
+    <File Include="Views/Contato/Index.cshtml">
+      <publishTime>07/21/2012 12:51:41</publishTime>
+    </File>
+    <File Include="Views/Divulgue/Index.cshtml">
+      <publishTime>07/21/2012 12:51:41</publishTime>
+    </File>
+    <File Include="Views/Gallery/Index.cshtml">
+      <publishTime>07/27/2012 23:42:14</publishTime>
+    </File>
+    <File Include="Views/Home/Index.cshtml">
+      <publishTime>07/25/2012 14:32:01</publishTime>
+    </File>
+    <File Include="Views/Inscricoes/Index.cshtml">
+      <publishTime>07/30/2012 12:05:11</publishTime>
+    </File>
+    <File Include="Views/Local/Index.cshtml">
+      <publishTime>07/12/2012 23:48:40</publishTime>
+    </File>
+    <File Include="Views/Palestrantes/Index.cshtml">
+      <publishTime>07/12/2012 23:48:40</publishTime>
+    </File>
+    <File Include="Views/Palestras/Index.cshtml">
+      <publishTime>07/21/2012 13:30:16</publishTime>
+    </File>
+    <File Include="Views/Patrocinadores/Index.cshtml">
+      <publishTime>08/06/2012 11:05:12</publishTime>
+    </File>
+    <File Include="Views/Shared/Error.cshtml">
+      <publishTime>07/12/2012 23:48:40</publishTime>
+    </File>
+    <File Include="Views/Shared/_Layout.cshtml">
+      <publishTime>08/06/2012 11:05:20</publishTime>
+    </File>
+    <File Include="Views/Web.config">
+      <publishTime>07/08/2012 21:54:58</publishTime>
+    </File>
+    <File Include="Views/_ViewStart.cshtml">
+      <publishTime>07/12/2012 23:48:40</publishTime>
+    </File>
+    <File Include="Web.config">
+      <publishTime>08/06/2012 11:11:04</publishTime>
+    </File>
+  </ItemGroup>
+</Project>
