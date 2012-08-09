@@ -4,14 +4,14 @@ Copyright 2012 Douglas Aguiar<doaguiar@gmail.com>, Glauco Vinicius<gl4uc0@gmail.
 
 This file is part of DevDay website.
 
-DevDay website is free software: you can redistribute it and/or modify it under the terms of the GNU General Public 
-License as published by the Free Software Foundation, either version 3 of the License, or (at your option) any later 
+DevDay website is free software: you can redistribute it and/or modify it under the terms of the GNU General Public
+License as published by the Free Software Foundation, either version 3 of the License, or (at your option) any later
 version.
 
-DevDay website is distributed in the hope that it will be useful, but WITHOUT ANY WARRANTY; without even the implied 
+DevDay website is distributed in the hope that it will be useful, but WITHOUT ANY WARRANTY; without even the implied
 warranty of MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE. See the GNU General Public License for more details.
 
-You should have received a copy of the GNU General Public License along with DevDay website. If not, 
+You should have received a copy of the GNU General Public License along with DevDay website. If not,
 see http://www.gnu.org/licenses/.
 */
 
@@ -33,5 +33,9 @@ namespace DevDay.Controllers
             return View();
         }
 
+        public ActionResult Enquete()
+        {
+            return View();
+        }
     }
 }

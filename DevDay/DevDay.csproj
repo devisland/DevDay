@@ -108,11 +108,14 @@
     <Content Include="Content\img\glyphicons-halflings-white.png" />
     <Content Include="Content\img\glyphicons-halflings.png" />
     <Content Include="Content\img\headerbg.jpg" />
+    <Content Include="Content\img\patrocinadores\apoio\logofumsoft.jpg" />
     <Content Include="Content\img\patrocinadores\apoio\logohoraextrabh.png" />
     <Content Include="Content\img\patrocinadores\apoio\logopangea.jpg" />
     <Content Include="Content\img\patrocinadores\apoio\logopythonmg.png" />
+    <Content Include="Content\img\patrocinadores\bronze\logositeware.jpg" />
     <Content Include="Content\img\patrocinadores\ouro\logoarkhi.jpg" />
     <Content Include="Content\img\patrocinadores\ouro\logouna.jpg" />
+    <Content Include="Content\img\patrocinadores\prata\logoeteg.jpg" />
     <Content Include="Content\img\patrocinadores\prata\logoframework.JPG" />
     <Content Include="Content\js\galleria\plugins\facebook\loader.gif" />
     <Content Include="Content\img\social-facebook-box-white-icon.png" />
@@ -164,7 +167,6 @@
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
-    <Folder Include="Content\img\patrocinadores\bronze\" />
     <Folder Include="Models\" />
   </ItemGroup>
   <ItemGroup>
@@ -199,6 +201,7 @@
     <Content Include="Views\Contato\Index.cshtml" />
     <Content Include="Views\Gallery\Index.cshtml" />
     <None Include="Properties\PublishProfiles\File.pubxml" />
+    <Content Include="Views\Divulgue\Enquete.cshtml" />
   </ItemGroup>
   <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
   <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v10.0\WebApplications\Microsoft.WebApplication.targets" />

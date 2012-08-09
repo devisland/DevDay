@@ -11,7 +11,7 @@ by editing this MSBuild file. In order to learn more about this please visit htt
   </PropertyGroup>
   <ItemGroup>
     <File Include="bin/DevDay.dll">
-      <publishTime>08/06/2012 11:11:02</publishTime>
+      <publishTime>08/08/2012 22:02:10</publishTime>
     </File>
     <File Include="bin/DevDay.pdb">
       <publishTime>07/30/2012 11:58:22</publishTime>
@@ -115,6 +115,9 @@ by editing this MSBuild file. In order to learn more about this please visit htt
     <File Include="Content/img/headerbg.jpg">
       <publishTime>06/07/2012 14:15:46</publishTime>
     </File>
+    <File Include="Content/img/patrocinadores/apoio/logofumsoft.jpg">
+      <publishTime>08/08/2012 21:49:47</publishTime>
+    </File>
     <File Include="Content/img/patrocinadores/apoio/logohoraextrabh.png">
       <publishTime>07/25/2012 01:58:11</publishTime>
     </File>
@@ -122,13 +125,22 @@ by editing this MSBuild file. In order to learn more about this please visit htt
       <publishTime>07/25/2012 02:03:11</publishTime>
     </File>
     <File Include="Content/img/patrocinadores/apoio/logopythonmg.png">
-      <publishTime>07/25/2012 23:03:20</publishTime>
+      <publishTime>08/08/2012 21:40:52</publishTime>
+    </File>
+    <File Include="Content/img/patrocinadores/bronze/logositeware.jpg">
+      <publishTime>08/08/2012 21:54:55</publishTime>
     </File>
     <File Include="Content/img/patrocinadores/ouro/logoarkhi.jpg">
       <publishTime>07/25/2012 01:19:56</publishTime>
     </File>
     <File Include="Content/img/patrocinadores/ouro/logouna.jpg">
       <publishTime>07/25/2012 01:20:47</publishTime>
+    </File>
+    <File Include="Content/img/patrocinadores/prata/logoeteg.jpg">
+      <publishTime>08/08/2012 21:44:53</publishTime>
+    </File>
+    <File Include="Content/img/patrocinadores/prata/logoframework.JPG">
+      <publishTime>08/06/2012 11:04:17</publishTime>
     </File>
     <File Include="Content/img/patrocinadores/prata/logoframework.png">
       <publishTime>08/06/2012 11:00:03</publishTime>
@@ -241,6 +253,9 @@ by editing this MSBuild file. In order to learn more about this please visit htt
     <File Include="Views/Contato/Index.cshtml">
       <publishTime>07/21/2012 12:51:41</publishTime>
     </File>
+    <File Include="Views/Divulgue/Enquete.cshtml">
+      <publishTime>08/06/2012 22:34:12</publishTime>
+    </File>
     <File Include="Views/Divulgue/Index.cshtml">
       <publishTime>07/21/2012 12:51:41</publishTime>
     </File>
@@ -263,13 +278,13 @@ by editing this MSBuild file. In order to learn more about this please visit htt
       <publishTime>07/21/2012 13:30:16</publishTime>
     </File>
     <File Include="Views/Patrocinadores/Index.cshtml">
-      <publishTime>08/06/2012 11:05:12</publishTime>
+      <publishTime>08/08/2012 21:56:00</publishTime>
     </File>
     <File Include="Views/Shared/Error.cshtml">
       <publishTime>07/12/2012 23:48:40</publishTime>
     </File>
     <File Include="Views/Shared/_Layout.cshtml">
-      <publishTime>08/06/2012 11:05:20</publishTime>
+      <publishTime>08/08/2012 21:58:15</publishTime>
     </File>
     <File Include="Views/Web.config">
       <publishTime>07/08/2012 21:54:58</publishTime>
