@@ -11,7 +11,7 @@ by editing this MSBuild file. In order to learn more about this please visit htt
   </PropertyGroup>
   <ItemGroup>
     <File Include="bin/DevDay.dll">
-      <publishTime>08/08/2012 22:02:10</publishTime>
+      <publishTime>08/10/2012 20:59:05</publishTime>
     </File>
     <File Include="bin/DevDay.pdb">
       <publishTime>07/30/2012 11:58:22</publishTime>
@@ -114,6 +114,9 @@ by editing this MSBuild file. In order to learn more about this please visit htt
     </File>
     <File Include="Content/img/headerbg.jpg">
       <publishTime>06/07/2012 14:15:46</publishTime>
+    </File>
+    <File Include="Content/img/patrocinadores/apoio/logocaelum.JPG">
+      <publishTime>08/10/2012 20:49:49</publishTime>
     </File>
     <File Include="Content/img/patrocinadores/apoio/logofumsoft.jpg">
       <publishTime>08/08/2012 21:49:47</publishTime>
@@ -278,13 +281,13 @@ by editing this MSBuild file. In order to learn more about this please visit htt
       <publishTime>07/21/2012 13:30:16</publishTime>
     </File>
     <File Include="Views/Patrocinadores/Index.cshtml">
-      <publishTime>08/08/2012 21:56:00</publishTime>
+      <publishTime>08/10/2012 20:54:04</publishTime>
     </File>
     <File Include="Views/Shared/Error.cshtml">
       <publishTime>07/12/2012 23:48:40</publishTime>
     </File>
     <File Include="Views/Shared/_Layout.cshtml">
-      <publishTime>08/08/2012 21:58:15</publishTime>
+      <publishTime>08/10/2012 20:53:41</publishTime>
     </File>
     <File Include="Views/Web.config">
       <publishTime>07/08/2012 21:54:58</publishTime>
