@@ -11,7 +11,7 @@ by editing this MSBuild file. In order to learn more about this please visit htt
   </PropertyGroup>
   <ItemGroup>
     <File Include="bin/DevDay.dll">
-      <publishTime>08/15/2012 14:54:32</publishTime>
+      <publishTime>08/16/2012 17:43:29</publishTime>
     </File>
     <File Include="bin/DevDay.pdb">
       <publishTime>07/30/2012 11:58:22</publishTime>
@@ -150,6 +150,9 @@ by editing this MSBuild file. In order to learn more about this please visit htt
     </File>
     <File Include="Content/img/patrocinadores/bronze/logo2xt.jpg">
       <publishTime>08/14/2012 14:58:25</publishTime>
+    </File>
+    <File Include="Content/img/patrocinadores/bronze/logoNitrato.JPG">
+      <publishTime>08/16/2012 17:22:30</publishTime>
     </File>
     <File Include="Content/img/patrocinadores/bronze/logositeware.jpg">
       <publishTime>08/08/2012 21:54:55</publishTime>
@@ -290,10 +293,10 @@ by editing this MSBuild file. In order to learn more about this please visit htt
       <publishTime>07/27/2012 23:42:14</publishTime>
     </File>
     <File Include="Views/Home/Index.cshtml">
-      <publishTime>07/25/2012 14:32:01</publishTime>
+      <publishTime>08/16/2012 00:38:07</publishTime>
     </File>
     <File Include="Views/Inscricoes/Index.cshtml">
-      <publishTime>07/30/2012 12:05:11</publishTime>
+      <publishTime>08/16/2012 00:27:47</publishTime>
     </File>
     <File Include="Views/Local/Index.cshtml">
       <publishTime>07/12/2012 23:48:40</publishTime>
@@ -302,16 +305,16 @@ by editing this MSBuild file. In order to learn more about this please visit htt
       <publishTime>07/12/2012 23:48:40</publishTime>
     </File>
     <File Include="Views/Palestras/Index.cshtml">
-      <publishTime>07/21/2012 13:30:16</publishTime>
+      <publishTime>08/16/2012 00:33:14</publishTime>
     </File>
     <File Include="Views/Patrocinadores/Index.cshtml">
-      <publishTime>08/15/2012 14:56:30</publishTime>
+      <publishTime>08/16/2012 17:23:44</publishTime>
     </File>
     <File Include="Views/Shared/Error.cshtml">
       <publishTime>07/12/2012 23:48:40</publishTime>
     </File>
     <File Include="Views/Shared/_Layout.cshtml">
-      <publishTime>08/15/2012 14:56:39</publishTime>
+      <publishTime>08/16/2012 17:23:22</publishTime>
     </File>
     <File Include="Views/Web.config">
       <publishTime>07/08/2012 21:54:58</publishTime>

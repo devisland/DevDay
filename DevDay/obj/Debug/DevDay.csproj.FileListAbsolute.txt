@@ -16,4 +16,3 @@ D:\Pessoais\Projetos\GitHub\DevDay\DevDay\bin\System.Web.WebPages.Deployment.xml
 D:\Pessoais\Projetos\GitHub\DevDay\DevDay\bin\System.Web.WebPages.Razor.xml
 D:\Pessoais\Projetos\GitHub\DevDay\DevDay\obj\Debug\DevDay.dll
 D:\Pessoais\Projetos\GitHub\DevDay\DevDay\obj\Debug\DevDay.pdb
-D:\Pessoais\Projetos\GitHub\DevDay\DevDay\obj\Debug\DevDay.csprojResolveAssemblyReference.cache
