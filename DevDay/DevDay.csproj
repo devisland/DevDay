@@ -109,13 +109,13 @@
     <Content Include="Content\img\glyphicons-halflings.png" />
     <Content Include="Content\img\headerbg.jpg" />
     <Content Include="Content\img\patrocinadores\apoio\comunidade\logodevisland.jpg" />
-    <Content Include="Content\img\patrocinadores\apoio\comunidade\logofumsoft.jpg" />
     <Content Include="Content\img\patrocinadores\apoio\comunidade\logoGDGBH.jpg" />
     <Content Include="Content\img\patrocinadores\apoio\comunidade\logohoraextrabh.jpg" />
     <Content Include="Content\img\patrocinadores\apoio\comunidade\logopangea.jpg" />
     <Content Include="Content\img\patrocinadores\apoio\comunidade\logopythonmg.jpg" />
     <Content Include="Content\img\patrocinadores\apoio\logoBrunoDiniz.jpg" />
     <Content Include="Content\img\patrocinadores\apoio\logocaelum.JPG" />
+    <Content Include="Content\img\patrocinadores\apoio\logofumsoft.jpg" />
     <Content Include="Content\img\patrocinadores\apoio\logoInfoQBrasil.jpg" />
     <Content Include="Content\img\patrocinadores\apoio\logolocaweb.jpg" />
     <Content Include="Content\img\patrocinadores\apoio\logoPluralsight.jpg" />

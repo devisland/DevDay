@@ -11,7 +11,7 @@ by editing this MSBuild file. In order to learn more about this please visit htt
   </PropertyGroup>
   <ItemGroup>
     <File Include="bin/DevDay.dll">
-      <publishTime>08/16/2012 17:43:29</publishTime>
+      <publishTime>08/19/2012 00:29:34</publishTime>
     </File>
     <File Include="bin/DevDay.pdb">
       <publishTime>07/30/2012 11:58:22</publishTime>
@@ -115,6 +115,24 @@ by editing this MSBuild file. In order to learn more about this please visit htt
     <File Include="Content/img/headerbg.jpg">
       <publishTime>06/07/2012 14:15:46</publishTime>
     </File>
+    <File Include="Content/img/patrocinadores/apoio/comunidade/logodevisland.jpg">
+      <publishTime>08/13/2012 21:08:26</publishTime>
+    </File>
+    <File Include="Content/img/patrocinadores/apoio/comunidade/logoGDGBH.jpg">
+      <publishTime>08/18/2012 22:56:44</publishTime>
+    </File>
+    <File Include="Content/img/patrocinadores/apoio/comunidade/logohoraextrabh.jpg">
+      <publishTime>08/15/2012 14:46:00</publishTime>
+    </File>
+    <File Include="Content/img/patrocinadores/apoio/comunidade/logopangea.jpg">
+      <publishTime>07/25/2012 02:03:11</publishTime>
+    </File>
+    <File Include="Content/img/patrocinadores/apoio/comunidade/logopythonmg.jpg">
+      <publishTime>08/15/2012 14:46:54</publishTime>
+    </File>
+    <File Include="Content/img/patrocinadores/apoio/logoBrunoDiniz.jpg">
+      <publishTime>08/18/2012 23:03:27</publishTime>
+    </File>
     <File Include="Content/img/patrocinadores/apoio/logocaelum.JPG">
       <publishTime>08/10/2012 20:49:49</publishTime>
     </File>
@@ -129,6 +147,9 @@ by editing this MSBuild file. In order to learn more about this please visit htt
     </File>
     <File Include="Content/img/patrocinadores/apoio/logohoraextrabh.png">
       <publishTime>07/25/2012 01:58:11</publishTime>
+    </File>
+    <File Include="Content/img/patrocinadores/apoio/logoInfoQBrasil.jpg">
+      <publishTime>08/18/2012 23:04:03</publishTime>
     </File>
     <File Include="Content/img/patrocinadores/apoio/logolocaweb.jpg">
       <publishTime>08/15/2012 14:44:50</publishTime>
@@ -308,13 +329,13 @@ by editing this MSBuild file. In order to learn more about this please visit htt
       <publishTime>08/16/2012 00:33:14</publishTime>
     </File>
     <File Include="Views/Patrocinadores/Index.cshtml">
-      <publishTime>08/16/2012 17:23:44</publishTime>
+      <publishTime>08/18/2012 23:09:50</publishTime>
     </File>
     <File Include="Views/Shared/Error.cshtml">
       <publishTime>07/12/2012 23:48:40</publishTime>
     </File>
     <File Include="Views/Shared/_Layout.cshtml">
-      <publishTime>08/16/2012 17:23:22</publishTime>
+      <publishTime>08/18/2012 23:10:42</publishTime>
     </File>
     <File Include="Views/Web.config">
       <publishTime>07/08/2012 21:54:58</publishTime>
