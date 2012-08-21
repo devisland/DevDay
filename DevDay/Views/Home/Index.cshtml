@@ -17,31 +17,34 @@ see http://www.gnu.org/licenses/.
 @{
     ViewBag.Title = "DevDay 2012 - Belo Horizonte #DevDay";
 }
+@section footerpatrocinio
+{
+    @Html.Partial("FooterPatrocinio")
+}
 <!-- Main hero unit for a primary marketing message or call to action -->
 <div id="myCarousel" class="carousel slide">
     <!-- Carousel items -->
     <div class="carousel-inner">
-        <div class="active item item1" style="background-image:url(@Url.Content("~/Content/img/devday2011.jpg")); background-repeat:no-repeat;" >
-            <p class="caption" style="line-height: 1; color: Black;">
-                DEVELOPERS!!! WHAT'S YOUR PROFESSION?!?!
-                <br />
-                <strong style="color: black">- 20 DE OUTUBRO -</strong></p>
+        <div class="active item item1" style="background-image:url(@Url.Content("~/Content/img/devday2011.jpg")); background-repeat:no-repeat;">
         </div>
         <div class="item item1">
             <br />
             <p class="caption" style="padding-left: 70px">
                 Agradecemos as submissões de temas
                 <br />
-                e estamos os avaliando com toda atenção.</p>
+                e estamos os avaliando com toda atenção.
+            </p>
             <p>
         </div>
         <div class="item item2">
             <p class="caption">
-                #DevIsland</p>
+                #DevIsland
+            </p>
         </div>
         <div class="item item3">
             <p class="caption">
-                #HoraExtraBH</p>
+                #HoraExtraBH
+            </p>
         </div>
     </div>
     <!-- Carousel nav -->
@@ -58,27 +61,26 @@ see http://www.gnu.org/licenses/.
                     mas tenham certeza que as palestras selecionadas surpreenderão a todos.
                     <br />
                     Muitos temas, diversidade de linguagens, palestrantes ilustres e um formato diferente para trocarmos mais conhecimento.
-                    <a href="@Url.Action("Index", "Palestras")">Faça a diferença na nossa comunidade!</a></p>
+                    <a href="@Url.Action("Index", "Palestras")">Faça a diferença na nossa comunidade!</a>
+                </p>
             </div>
         </div>
         <div class="span4 home-column clearfix">
             <i class="icon-edit pull-left"></i>
             <div class="content">
-                <h2>
-                    Inscrições</h2>
+                <h2>Inscrições</h2>
                 <p>
-                    Fique ligado nas datas das inscrições. Não perca tempo e seja o primeiro a fazer a diferença! <a href="@Url.Action("Index", "Inscricoes")">
-                        Faça já a sua.</a></p>
+                    Fique ligado nas datas das inscrições. Não perca tempo e seja o primeiro a fazer a diferença! <a href="@Url.Action("Index", "Inscricoes")">Faça já a sua.</a>
+                </p>
             </div>
         </div>
         <div class="span4 home-column clearfix">
             <i class="icon-map-marker pull-left"></i>
             <div class="content">
-                <h2>
-                    Local</h2>
+                <h2>Local</h2>
                 <p>
-                    O evento será onde vocês já conhecem, no Auditório da UNA Aimorés. <a href="@Url.Action("Index", "Local")">
-                        Confira.</a></p>
+                    O evento será onde vocês já conhecem, no Auditório da UNA Aimorés. <a href="@Url.Action("Index", "Local")">Confira.</a>
+                </p>
             </div>
         </div>
     </div>
