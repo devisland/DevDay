@@ -16,3 +16,22 @@ D:\Pessoais\Projetos\GitHub\DevDay\DevDay\bin\System.Web.WebPages.Deployment.xml
 D:\Pessoais\Projetos\GitHub\DevDay\DevDay\bin\System.Web.WebPages.Razor.xml
 D:\Pessoais\Projetos\GitHub\DevDay\DevDay\obj\Debug\DevDay.dll
 D:\Pessoais\Projetos\GitHub\DevDay\DevDay\obj\Debug\DevDay.pdb
+C:\Users\Douglas Aguiar\Documents\GitHub\DevDay\DevDay\bin\DevDay.dll
+C:\Users\Douglas Aguiar\Documents\GitHub\DevDay\DevDay\bin\DevDay.pdb
+C:\Users\Douglas Aguiar\Documents\GitHub\DevDay\DevDay\bin\Microsoft.Web.Infrastructure.dll
+C:\Users\Douglas Aguiar\Documents\GitHub\DevDay\DevDay\bin\System.Web.Helpers.dll
+C:\Users\Douglas Aguiar\Documents\GitHub\DevDay\DevDay\bin\System.Web.Mvc.dll
+C:\Users\Douglas Aguiar\Documents\GitHub\DevDay\DevDay\bin\System.Web.Razor.dll
+C:\Users\Douglas Aguiar\Documents\GitHub\DevDay\DevDay\bin\System.Web.WebPages.Deployment.dll
+C:\Users\Douglas Aguiar\Documents\GitHub\DevDay\DevDay\bin\System.Web.WebPages.dll
+C:\Users\Douglas Aguiar\Documents\GitHub\DevDay\DevDay\bin\System.Web.WebPages.Razor.dll
+C:\Users\Douglas Aguiar\Documents\GitHub\DevDay\DevDay\bin\Microsoft.Web.Infrastructure.xml
+C:\Users\Douglas Aguiar\Documents\GitHub\DevDay\DevDay\bin\System.Web.Mvc.xml
+C:\Users\Douglas Aguiar\Documents\GitHub\DevDay\DevDay\bin\System.Web.Razor.xml
+C:\Users\Douglas Aguiar\Documents\GitHub\DevDay\DevDay\bin\System.Web.WebPages.xml
+C:\Users\Douglas Aguiar\Documents\GitHub\DevDay\DevDay\bin\System.Web.Helpers.xml
+C:\Users\Douglas Aguiar\Documents\GitHub\DevDay\DevDay\bin\System.Web.WebPages.Deployment.xml
+C:\Users\Douglas Aguiar\Documents\GitHub\DevDay\DevDay\bin\System.Web.WebPages.Razor.xml
+C:\Users\Douglas Aguiar\Documents\GitHub\DevDay\DevDay\obj\Debug\DevDay.csprojResolveAssemblyReference.cache
+C:\Users\Douglas Aguiar\Documents\GitHub\DevDay\DevDay\obj\Debug\DevDay.dll
+C:\Users\Douglas Aguiar\Documents\GitHub\DevDay\DevDay\obj\Debug\DevDay.pdb

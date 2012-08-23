@@ -251,7 +251,7 @@ h1, h2, h3, h4, h5, h6 {
     display: block;
     position: absolute;
     top: 30px;
-    left: -75px;
+    right: -75px;
     background: #FAFAFA;
     background: black;
     color: white;
@@ -261,11 +261,11 @@ h1, h2, h3, h4, h5, h6 {
     text-align: center;
     font-size: 27px;
     line-height: 32px;
-    -webkit-transform: rotate(-45deg);
-    -moz-transform: rotate(-45deg);
-    -o-transform: rotate(-45deg);
-    -ms-transform: rotate(-45deg);
-    transform: rotate(-45deg);
+    -webkit-transform: rotate(45deg);
+    -moz-transform: rotate(45deg);
+    -o-transform: rotate(45deg);
+    -ms-transform: rotate(45deg);
+    transform: rotate(45deg);
     border-bottom: 1px solid #CACACA;
 }
 
