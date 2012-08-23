@@ -138,6 +138,7 @@
     <Content Include="Content\img\patrocinadores\ouro\logouna.jpg" />
     <Content Include="Content\img\patrocinadores\prata\logoeteg.jpg" />
     <Content Include="Content\img\patrocinadores\prata\logoframework.JPG" />
+    <Content Include="Content\js\bootstrap-collapse.js" />
     <Content Include="Content\js\galleria\plugins\facebook\loader.gif" />
     <Content Include="Content\img\social-facebook-box-white-icon.png" />
     <Content Include="Content\img\social-twitter-box-white-icon.png" />

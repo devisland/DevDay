@@ -21,34 +21,281 @@ see http://www.gnu.org/licenses/.
 {
     @Html.Partial("FooterPatrocinio")
 }
+@section js
+{
+    <script src="@Url.Content("~/Content/js/bootstrap-collapse.js")" type="text/javascript"></script>
+}
 <div class="hero-unit">
-    <h1>
-        Palestras</h1>
-    <h3>
-        A lista de palestras será divulgada após a aprovação das submissões dia 01/09/2012</h3>
+    <h1>Palestras</h1>
+    <h3>Confira abaixo a lista de palestras que foram aprovadas</h3>
 </div>
 <div class="row">
-    <div class="span8">
-        <h2>
-            <small>Agradecemos a todos que submeteram palestras e temas para o seu evento. Estamos iniciando a avaliação
-                dos temas e assim que avaliarmos as quase 60 palestras, anunciaremos aqui os palestrantes, bem como
-                enviaremos email informando da aprovação ou não do tema.</small>
-        </h2>
-        <br />
-        <h3>
-            O #DevDay2012<small> será realizado por vocês, desenvolvedores e membros da nossa comunidade, pois temos
-                certeza que voc&ecirc;s t&ecirc;m muito a contribuir com a comunidade.</small>
-            <br />
-        </h3>
-    </div>
-    <div class="span4">
-        <h2>
-            Datas importantes:</h2>
-        <div class="well">
-            <span class="icon-check"></span>Submissão de palestras até <span class="badge badge-important">15 de agosto</span>
-        </div>
-        <div class="well">
-            <span class="icon-check"></span>Aprovação de palestras até <span class="badge badge-inverse">01 de setembro</span>
-        </div>
+    <div class="span12">
+        <fieldset>
+            <legend>Lightning Talks</legend>
+            <div class="accordion" id="accordion1">
+                <div class="accordion-group">
+                    <div class="accordion-heading">
+                        <a class="accordion-toggle collapsed" data-toggle="collapse" data-parent="#accordion1" href="#collapse1">Influência da qualidade do código no ROI</a>
+                    </div>
+                    <div id="collapse1" class="accordion-body collapse" style="height: 0px;">
+                        <div class="accordion-inner">
+                            <p>Buscarei nesta palestra relacionar de forma direta a qualidade de codificação ao negócio e provar que o código ruim é na realidade um grande destruidor de oportunidades e boas idéias.</p>
+                            <p>Tratarei de apresentar argumentos para provar que um dos melhores investimentos para softwares duráveis é o próprio código, exemplificando de forma clara impactos da boa codificação e do esforço contínuo para melhoria do código no negócio em si.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="accordion-group">
+                    <div class="accordion-heading">
+                        <a class="accordion-toggle collapsed" data-toggle="collapse" data-parent="#accordion1" href="#collapse2">Meteorjs
+                        </a>
+                    </div>
+                    <div id="collapse2" class="accordion-body collapse" style="height: 0px;">
+                        <div class="accordion-inner">
+                            <p>Quero fazer uma pequena apresentação sobre este "framework" apresentando as mudanças de conceito que ele trás a tona.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="accordion-group">
+                    <div class="accordion-heading">
+                        <a class="accordion-toggle collapsed" data-toggle="collapse" data-parent="#accordion1" href="#collapse3">MongoDB no mundo real
+                        </a>
+                    </div>
+                    <div id="collapse3" class="accordion-body collapse" style="height: 0px;">
+                        <div class="accordion-inner">
+                            <p>Explicação do caso de uso da Sailthru.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="accordion-group">
+                    <div class="accordion-heading">
+                        <a class="accordion-toggle collapsed" data-toggle="collapse" data-parent="#accordion1" href="#collapse4">Os 10 mandamentos do fracasso!
+                        </a>
+                    </div>
+                    <div id="collapse4" class="accordion-body collapse" style="height: 0px;">
+                        <div class="accordion-inner">
+                            <p>Frases como não tenho tempo, a culpa não é minha, estou trabalhando demais, são frequentes na rotina de quem diz buscar o sucesso mas não consegue alcançar seus objetivos, gastar seu tempo de forma produtiva e aproveitar a vida.</p>
+                            <p>Nesta Lightning Talk direcionada tanto ao público desenvolvedor, quanto aos gerentes de equipe, pretendo mostrar de maneira sucinta 10 práticas que muitas vezes fazem parte do cotidiano das equipes mas que de maneira simples podem ser excluídas no intuito de aumentar a produtividade e eficácia do desenvolvedor, melhorando assim o nível de satisfação e motivação de todos os envolvidos no processo.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="accordion-group">
+                    <div class="accordion-heading">
+                        <a class="accordion-toggle collapsed" data-toggle="collapse" data-parent="#accordion1" href="#collapse5">Programação funcional
+                        </a>
+                    </div>
+                    <div id="collapse5" class="accordion-body collapse" style="height: 0px;">
+                        <div class="accordion-inner">
+                            <p>Alguns aspectos de programação funcional para desenvolvedores C#</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="accordion-group">
+                    <div class="accordion-heading">
+                        <a class="accordion-toggle collapsed" data-toggle="collapse" data-parent="#accordion1" href="#collapse6">Regras flexíveis e agilidade para o negócio com a implantação de BRMS
+                        </a>
+                    </div>
+                    <div id="collapse6" class="accordion-body collapse" style="height: 0px;">
+                        <div class="accordion-inner">
+                            <p>Esta lightning talk apresenta um case de implantação corporativa de BRMS, mostrando os benefícios para a organização, os desafios enfrentados e fatores de sucesso no projeto.</p>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </fieldset>
+        <fieldset>
+            <legend>Palestras</legend>
+            <div class="accordion" id="accordion2">
+                <div class="accordion-group">
+                    <div class="accordion-heading">
+                        <a class="accordion-toggle collapsed" data-toggle="collapse" data-parent="#accordion2" href="#collapse7">Coffeescript no mundo real
+                        </a>
+                    </div>
+                    <div id="collapse7" class="accordion-body collapse" style="height: 0px;">
+                        <div class="accordion-inner">
+                            <p>Após um ano escrevendo Coffeescript em aplicações do mundo real podemos de fato fazer uma retrospectiva dos benefícios e problemas.</p>
+                            <p>Nesta palestra vamos discutir como Coffee pode melhorar drasticamente o resultado do seu Javascript além de ajudar a alavancar o ambiente de desenvolvimento frontend atual.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="accordion-group">
+                    <div class="accordion-heading">
+                        <a class="accordion-toggle collapsed" data-toggle="collapse" data-parent="#accordion2" href="#collapse8">Desenvolvimento x Diversidade de dispositivos Android: Boas Práticas
+                        </a>
+                    </div>
+                    <div id="collapse8" class="accordion-body collapse" style="height: 0px;">
+                        <div class="accordion-inner">
+                            <p>
+                                Demonstrar as recomendações da Google que são imprescindíveis para desenvolvimento Android como:
+                            - Estilização de aplicações através dos tópicos: métricas e grids, tipografia, cores, ícones.
+                            - Trabalho com dimensões diversas de tela, suporte a línguas e recursos específicos por região e demais qualificadores disponíveis.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="accordion-group">
+                    <div class="accordion-heading">
+                        <a class="accordion-toggle collapsed" data-toggle="collapse" data-parent="#accordion2" href="#collapse9">Enterprise Integration Patterns
+                        </a>
+                    </div>
+                    <div id="collapse9" class="accordion-body collapse" style="height: 0px;">
+                        <div class="accordion-inner">
+                            <p>Palestra de arquitetura, discutindo padrões de integração entre aplicações.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="accordion-group">
+                    <div class="accordion-heading">
+                        <a class="accordion-toggle collapsed" data-toggle="collapse" data-parent="#accordion2" href="#collapse10">Introdução ao Scala
+                        </a>
+                    </div>
+                    <div id="collapse10" class="accordion-body collapse" style="height: 0px;">
+                        <div class="accordion-inner">
+                            <p>Scala é uma linguagem que mistura os paradigmas OO e funcional, desenvolvida para rodar em cima da JVM que vem ganhando muito espaço devido às suas características, sendo adotada em grandes plataformas como twitter e foursquare.</p>
+                            <p>Venha conhecer essa excelente linguagem, quais são os recursos que ela oferece, suas vantagens e desvantages e porque ela está sendo adotada em empresas gigantes como o twitter.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="accordion-group">
+                    <div class="accordion-heading">
+                        <a class="accordion-toggle collapsed" data-toggle="collapse" data-parent="#accordion2" href="#collapse11">Java Kinect
+                        </a>
+                    </div>
+                    <div id="collapse11" class="accordion-body collapse" style="height: 0px;">
+                        <div class="accordion-inner">
+                            <p>
+                                Essa palestra tem como público alvo desenvolvedores Java com experiência em processamento de imagens.
+Trará uma abordagem simplificada sobre o uso do dispositivo Microsoft Kinect com drivers de terceiros, possibilitando a integração com JAVA.
+Ao final da palestra o ouvinte estará capacitado à criar suas próprias aplicações de realidade aumentada utilizando o hardware como entrada dos dados.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="accordion-group">
+                    <div class="accordion-heading">
+                        <a class="accordion-toggle collapsed" data-toggle="collapse" data-parent="#accordion2" href="#collapse12">Motivação, você está fazendo isso certo?
+                        </a>
+                    </div>
+                    <div id="collapse12" class="accordion-body collapse" style="height: 0px;">
+                        <div class="accordion-inner">
+                            <p>O principal objetivo desta conversa é trazer para o público uma reflexão sobre as principais atitudes tomadas pelas organizações com o intuito de motivar suas equipes tornando-as mais produtivas e como muitas vezes o impacto destas atitudes é pequeno.</p>
+                            <p>Assim, abordar como pequenas mudanças na cultura da empresa podem trazer grandes benefícios trabalhando fatores motivacionais nos membros da equipe.</p>
+                            <p>Muitas pessoas criam a falsa regra de que as outras são motivadas por um bom salário, um bom cargo e outras variáveis que muitas vezes, apesar de não serem desmotivadoras, não conseguem cumprir bem este papel motivacional nos membros da equipe.</p>
+                            <p>Motivar uma equipe é sempre uma tarefa desafiadora, porém a tarefa de não desmotivar a mesma algumas vezes pode ser um desafio maior ainda.</p>
+                            <p>Embasada em princípios ágeis, como: "Build projects around motivated individuals. Give them the environment and support they need, and trust them to get the job done.", pretendo abordar os principais motivos pelos quais uma equipe com grande potencial fica desmotivada e diminui consideravelmente sua produtividade.</p>
+                            <p>Além de como pequenas atitudes interferem no comportamento dos membros da equipe e como elas podem reagir de maneira positiva ou negativa sobre eles.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="accordion-group">
+                    <div class="accordion-heading">
+                        <a class="accordion-toggle collapsed" data-toggle="collapse" data-parent="#accordion2" href="#collapse13">O elo perdido: Sincronizando webapps HTML5 com o servidor
+                        </a>
+                    </div>
+                    <div id="collapse13" class="accordion-body collapse" style="height: 0px;">
+                        <div class="accordion-inner">
+                            <p>Explicação de como utilizar algumas o HTML5 e o node.js para criar aplicações offline que sincronizem com o servidor.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="accordion-group">
+                    <div class="accordion-heading">
+                        <a class="accordion-toggle collapsed" data-toggle="collapse" data-parent="#accordion2" href="#collapse14">Python: iteradores, geradores, etc.
+                        </a>
+                    </div>
+                    <div id="collapse14" class="accordion-body collapse" style="height: 0px;">
+                        <div class="accordion-inner">
+                            <p>Se você programa em Python mas não usa geradores, está deixando de aproveitar um recurso poderoso da linguagem.</p>
+                            <p>Partimos do pattern Iterator e mostramos seus usos práticos e suporte nativo na linguagem, incluindo funções e expressões geradoras, que permitem lidar com massas de dados muito grandes de modo eficiente e com baixo consumo de memória.</p>
+                            <p>Ao final, mostramos o uso de uma função geradora como co-rotina simplificando a programação assíncrona com o Tornado.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="accordion-group">
+                    <div class="accordion-heading">
+                        <a class="accordion-toggle collapsed" data-toggle="collapse" data-parent="#accordion2" href="#collapse15">Quando utilizar o crowdsourcing para testar meu software?
+                        </a>
+                    </div>
+                    <div id="collapse15" class="accordion-body collapse" style="height: 0px;">
+                        <div class="accordion-inner">
+                            <p>Hoje o mercado está mais maduro na utilização de mão de obra especilizada em testes de software para apoiar na melhoraria da qualidade de sistemas. No entanto, uma nova abordagem vem ganhando espaço: a utilização do crowdsourcing.</p>
+                            <p>
+                                Mas existem ainda muitas dúvidas com relação e este novo modelo de trabalho.
+                            A palestra irá abordar o conceito de Crowdsourcing, quais as áreas mais comuns de sua utilização e quais as vantagens dessa abordagem em testes de software
+                            </p>
+                            <p>Será apresentando também um comparativo entre o Crowdsourcing em testes e o modelo tradicional, indicando quando um ou outro deve ser utilizado.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="accordion-group">
+                    <div class="accordion-heading">
+                        <a class="accordion-toggle collapsed" data-toggle="collapse" data-parent="#accordion2" href="#collapse16">Redis
+                        </a>
+                    </div>
+                    <div id="collapse16" class="accordion-body collapse" style="height: 0px;">
+                        <div class="accordion-inner">
+                            <p>Entender o funcionamento o que é o banco de dados Redis, onde ele pode ser utilizado e mostrar como temos usado o redis em alguns projetos dentro da globo.com.</p>
+                            <p>O benefício é entender o que é o redis, ver vantagens/desvantages do seu uso com exemplos tanto sucesso e insucesso numa grande empresa.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="accordion-group">
+                    <div class="accordion-heading">
+                        <a class="accordion-toggle collapsed" data-toggle="collapse" data-parent="#accordion2" href="#collapse17">Saindo do brownfield com refactoring
+                        </a>
+                    </div>
+                    <div id="collapse17" class="accordion-body collapse" style="height: 0px;">
+                        <div class="accordion-inner">
+                            <p>Uma aplicação em produção que seja lucrativa não deve ser jogada fora e refeita do zero, mas sim sofrer constantes manutenções não somente emergenciais como preventivas.</p>
+                            <p>Essas manutenções devem ocorrer em forma de Refactoring do seu código. Essa palestra vai mostrar o que é Refactoring, como fazer de maneira segura e que ele não é um bicho de 7 cabeças, através da resolução de um kata de um exercício do Martin Fowler.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="accordion-group">
+                    <div class="accordion-heading">
+                        <a class="accordion-toggle collapsed" data-toggle="collapse" data-parent="#accordion2" href="#collapse18">Teste seu javascript se não quiser uma macarronada para o jantar
+                        </a>
+                    </div>
+                    <div id="collapse18" class="accordion-body collapse" style="height: 0px;">
+                        <div class="accordion-inner">
+                            <p>Essa é uma apresentação que demonstra a imprevisibilidade do Javascript de uma maneira interativa e divertida, e a importância dos testes para que todo o código não vire uma macarronada.</p>
+                            <p>
+                                Será apresentado o conceito de SPA com seus diversos Frameworks de apoio e o quão o Javascript está sendo utilizado e sua tendência de crescimento.
+Haverá exemplos de testes práticos em cenários reais, passando pelas tecnologias disponíveis de cada cenário.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="accordion-group">
+                    <div class="accordion-heading">
+                        <a class="accordion-toggle collapsed" data-toggle="collapse" data-parent="#accordion2" href="#collapse19">Universos paralelos
+                        </a>
+                    </div>
+                    <div id="collapse19" class="accordion-body collapse" style="height: 0px;">
+                        <div class="accordion-inner">
+                            <p>Esta é uma tentativa de mostrar o bem que me fez começar a viver em outros mundos: *nix, Mac, Ruby, Rails, HTML, CSS, shell, git, iOS...</p>
+                            <p>A idéia é mostrar como viver em mundos diferentes, ao mesmo tempo, pode ser benéfico para sua carreira e para seus skills técnicos. A idéia é mostrar um pouco como quem só vive em um mundo só conhece martelo, e enxerga prego em todos os problemas.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="accordion-group">
+                    <div class="accordion-heading">
+                        <a class="accordion-toggle collapsed" data-toggle="collapse" data-parent="#accordion2" href="#collapse20">Visão comparativa de frameworks Web: Java / Ruby / C#
+                        </a>
+                    </div>
+                    <div id="collapse20" class="accordion-body collapse" style="height: 0px;">
+                        <div class="accordion-inner">
+                            <p>
+                                A WWW foi criada como uma forma de compartilhamento e envio de textos. 
+                                Entretanto, a sua popularização, o crescimento do comércio e o surgimento de novos aplicativos fez com que o desenvolvimento web tivesse que lidar com a complexidade de novos objetos e com a interatividade do usuário.
+                            </p>
+                            <p>Para suprir estas dificuldades, uma imensa quantidade de frameworks web foi desenvolvida, o que pode acabar gerando a chamada "analysis paralysis", ou seja, a paralisia do desenvolvimento diante da difícil tarefa de escolher um framework. </p>
+                            <p>Nesta palestra abordaremos alguns critérios de escolha de frameworks web ao mesmo tempo em que analisamos 3 modelos atualmente muito discutidos: Play! Framework para Java e Scala, Ruby on Rails e ASP.NET MVC.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </fieldset>
     </div>
 </div>
