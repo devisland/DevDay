@@ -140,6 +140,7 @@
     <Content Include="Content\img\patrocinadores\prata\logoeteg.jpg" />
     <Content Include="Content\img\patrocinadores\prata\logoframework.JPG" />
     <Content Include="Content\js\bootstrap-collapse.js" />
+    <Content Include="Content\js\bootstrap-tab.js" />
     <Content Include="Content\js\galleria\plugins\facebook\loader.gif" />
     <Content Include="Content\img\social-facebook-box-white-icon.png" />
     <Content Include="Content\img\social-twitter-box-white-icon.png" />
@@ -150,6 +151,7 @@
     <Content Include="Content\js\galleria\galleria-1.2.7.js" />
     <Content Include="Content\js\galleria\galleria-1.2.7.min.js" />
     <Content Include="Content\js\galleria\plugins\facebook\galleria.facebook.js" />
+    <Content Include="Content\js\jquery-1.8.0.min.js" />
     <Content Include="Content\js\jquery.flot.min.js" />
     <Content Include="Content\js\jquery.ui.map.js" />
     <Content Include="Content\js\galleria\plugins\flickr\flickr-demo.html" />
