@@ -245,35 +245,3 @@ h1, h2, h3, h4, h5, h6 {
 .apoio img {
     width: 90px;
 }
-
-/*Banner canto superior esquerdo*/
-.forkme {
-    display: block;
-    position: absolute;
-    top: 30px;
-    right: -75px;
-    background: #FAFAFA;
-    background: black;
-    color: white;
-    height: 46px;
-    width: 250px;
-    text-decoration: none;
-    text-align: center;
-    font-size: 27px;
-    line-height: 32px;
-    -webkit-transform: rotate(45deg);
-    -moz-transform: rotate(45deg);
-    -o-transform: rotate(45deg);
-    -ms-transform: rotate(45deg);
-    transform: rotate(45deg);
-    border-bottom: 1px solid #CACACA;
-}
-
-    .forkme span {
-        display: block;
-        position: absolute;
-        left: 70px;
-        top: 20px;
-        font-size: 15px;
-        margin: 2px 2px 2px 2px;
-    }
