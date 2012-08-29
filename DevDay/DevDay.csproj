@@ -129,9 +129,11 @@
     <Content Include="Content\img\patrocinadores\apoio\logofumsoft.jpg" />
     <Content Include="Content\img\patrocinadores\apoio\logoInfoQBrasil.jpg" />
     <Content Include="Content\img\patrocinadores\apoio\logolocaweb.jpg" />
+    <Content Include="Content\img\patrocinadores\apoio\logoms.png" />
     <Content Include="Content\img\patrocinadores\apoio\logoPluralsight.jpg" />
     <Content Include="Content\img\patrocinadores\apoio\logoServerGrove.jpg" />
     <Content Include="Content\img\patrocinadores\bronze\logo2xt.jpg" />
+    <Content Include="Content\img\patrocinadores\bronze\logoLambda3.png" />
     <Content Include="Content\img\patrocinadores\bronze\logoNitrato.JPG" />
     <Content Include="Content\img\patrocinadores\bronze\logositeware.jpg" />
     <Content Include="Content\img\patrocinadores\ouro\logocodehouse.png" />
