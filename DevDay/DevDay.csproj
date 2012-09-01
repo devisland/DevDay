@@ -113,13 +113,14 @@
     <Content Include="Content\img\auditorio6.jpg" />
     <Content Include="Content\img\auditorio7.jpg" />
     <Content Include="Content\img\bannerdata.png" />
-    <Content Include="Content\img\patrocinadores\apoio\comunidade\logobraziljs.png" />
     <Content Include="Content\img\devday.png" />
     <Content Include="Content\img\devday2.png" />
     <Content Include="Content\img\devday2011.jpg" />
     <Content Include="Content\img\glyphicons-halflings-white.png" />
     <Content Include="Content\img\glyphicons-halflings.png" />
     <Content Include="Content\img\headerbg.jpg" />
+    <Content Include="Content\img\patrocinadores\apoio\comunidade\logobraziljs.JPG" />
+    <Content Include="Content\img\patrocinadores\apoio\comunidade\logocanjs.jpg" />
     <Content Include="Content\img\patrocinadores\apoio\comunidade\logodevisland.jpg" />
     <Content Include="Content\img\patrocinadores\apoio\comunidade\logoGDGBH.jpg" />
     <Content Include="Content\img\patrocinadores\apoio\comunidade\logohoraextrabh.jpg" />
@@ -134,7 +135,8 @@
     <Content Include="Content\img\patrocinadores\apoio\logoPluralsight.jpg" />
     <Content Include="Content\img\patrocinadores\apoio\logoServerGrove.jpg" />
     <Content Include="Content\img\patrocinadores\bronze\logo2xt.jpg" />
-    <Content Include="Content\img\patrocinadores\bronze\logoLambda3.png" />
+    <Content Include="Content\img\patrocinadores\bronze\logoAvenueCode_h.JPG" />
+    <Content Include="Content\img\patrocinadores\bronze\logoLambda3.jpg" />
     <Content Include="Content\img\patrocinadores\bronze\logoNitrato.JPG" />
     <Content Include="Content\img\patrocinadores\bronze\logositeware.jpg" />
     <Content Include="Content\img\patrocinadores\ouro\logocodehouse.png" />
@@ -142,6 +144,7 @@
     <Content Include="Content\img\patrocinadores\ouro\logouna.jpg" />
     <Content Include="Content\img\patrocinadores\prata\logoeteg.jpg" />
     <Content Include="Content\img\patrocinadores\prata\logoframework.JPG" />
+    <Content Include="Content\img\patrocinadores\prata\logoMaxtrack.JPG" />
     <Content Include="Content\js\bootstrap-collapse.js" />
     <Content Include="Content\js\bootstrap-tab.js" />
     <Content Include="Content\js\galleria\plugins\facebook\loader.gif" />

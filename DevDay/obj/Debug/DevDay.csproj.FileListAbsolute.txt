@@ -35,3 +35,4 @@ C:\Users\Douglas Aguiar\Documents\GitHub\DevDay\DevDay\bin\System.Web.WebPages.R
 C:\Users\Douglas Aguiar\Documents\GitHub\DevDay\DevDay\obj\Debug\DevDay.csprojResolveAssemblyReference.cache
 C:\Users\Douglas Aguiar\Documents\GitHub\DevDay\DevDay\obj\Debug\DevDay.dll
 C:\Users\Douglas Aguiar\Documents\GitHub\DevDay\DevDay\obj\Debug\DevDay.pdb
+D:\Pessoais\Projetos\GitHub\DevDay\DevDay\obj\Debug\DevDay.csprojResolveAssemblyReference.cache

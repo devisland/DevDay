@@ -11,7 +11,7 @@ by editing this MSBuild file. In order to learn more about this please visit htt
   </PropertyGroup>
   <ItemGroup>
     <File Include="bin/DevDay.dll">
-      <publishTime>08/19/2012 00:29:34</publishTime>
+      <publishTime>09/01/2012 16:47:08</publishTime>
     </File>
     <File Include="bin/DevDay.pdb">
       <publishTime>07/30/2012 11:58:22</publishTime>
@@ -71,7 +71,7 @@ by editing this MSBuild file. In order to learn more about this please visit htt
       <publishTime>07/11/2012 02:16:09</publishTime>
     </File>
     <File Include="Content/css/portfolio.css">
-      <publishTime>07/25/2012 01:00:12</publishTime>
+      <publishTime>08/31/2012 00:46:16</publishTime>
     </File>
     <File Include="Content/font/fontawesome-webfont.svg">
       <publishTime>06/05/2012 13:24:28</publishTime>
@@ -97,6 +97,9 @@ by editing this MSBuild file. In order to learn more about this please visit htt
     <File Include="Content/img/auditorio7.jpg">
       <publishTime>07/12/2012 23:48:40</publishTime>
     </File>
+    <File Include="Content/img/bannerdata.png">
+      <publishTime>08/31/2012 00:46:16</publishTime>
+    </File>
     <File Include="Content/img/devday.png">
       <publishTime>07/16/2012 01:04:00</publishTime>
     </File>
@@ -114,6 +117,12 @@ by editing this MSBuild file. In order to learn more about this please visit htt
     </File>
     <File Include="Content/img/headerbg.jpg">
       <publishTime>06/07/2012 14:15:46</publishTime>
+    </File>
+    <File Include="Content/img/patrocinadores/apoio/comunidade/logobraziljs.JPG">
+      <publishTime>09/01/2012 16:36:27</publishTime>
+    </File>
+    <File Include="Content/img/patrocinadores/apoio/comunidade/logocanjs.jpg">
+      <publishTime>09/01/2012 16:40:21</publishTime>
     </File>
     <File Include="Content/img/patrocinadores/apoio/comunidade/logodevisland.jpg">
       <publishTime>08/13/2012 21:08:26</publishTime>
@@ -154,6 +163,9 @@ by editing this MSBuild file. In order to learn more about this please visit htt
     <File Include="Content/img/patrocinadores/apoio/logolocaweb.jpg">
       <publishTime>08/15/2012 14:44:50</publishTime>
     </File>
+    <File Include="Content/img/patrocinadores/apoio/logoms.png">
+      <publishTime>08/31/2012 00:46:16</publishTime>
+    </File>
     <File Include="Content/img/patrocinadores/apoio/logopangea.jpg">
       <publishTime>07/25/2012 02:03:11</publishTime>
     </File>
@@ -172,6 +184,12 @@ by editing this MSBuild file. In order to learn more about this please visit htt
     <File Include="Content/img/patrocinadores/bronze/logo2xt.jpg">
       <publishTime>08/14/2012 14:58:25</publishTime>
     </File>
+    <File Include="Content/img/patrocinadores/bronze/logoAvenueCode_h.JPG">
+      <publishTime>09/01/2012 16:22:31</publishTime>
+    </File>
+    <File Include="Content/img/patrocinadores/bronze/logoLambda3.jpg">
+      <publishTime>09/01/2012 16:12:02</publishTime>
+    </File>
     <File Include="Content/img/patrocinadores/bronze/logoNitrato.JPG">
       <publishTime>08/16/2012 17:22:30</publishTime>
     </File>
@@ -180,6 +198,9 @@ by editing this MSBuild file. In order to learn more about this please visit htt
     </File>
     <File Include="Content/img/patrocinadores/ouro/logoarkhi.jpg">
       <publishTime>08/14/2012 15:07:18</publishTime>
+    </File>
+    <File Include="Content/img/patrocinadores/ouro/logocodehouse.png">
+      <publishTime>08/23/2012 22:36:08</publishTime>
     </File>
     <File Include="Content/img/patrocinadores/ouro/logosilex.jpg">
       <publishTime>08/14/2012 15:04:53</publishTime>
@@ -196,11 +217,20 @@ by editing this MSBuild file. In order to learn more about this please visit htt
     <File Include="Content/img/patrocinadores/prata/logoframework.png">
       <publishTime>08/06/2012 11:00:03</publishTime>
     </File>
+    <File Include="Content/img/patrocinadores/prata/logoMaxtrack.JPG">
+      <publishTime>09/01/2012 16:30:28</publishTime>
+    </File>
     <File Include="Content/img/social-facebook-box-white-icon.png">
       <publishTime>07/12/2012 23:48:40</publishTime>
     </File>
     <File Include="Content/img/social-twitter-box-white-icon.png">
       <publishTime>07/12/2012 23:48:40</publishTime>
+    </File>
+    <File Include="Content/js/bootstrap-collapse.js">
+      <publishTime>08/23/2012 22:36:09</publishTime>
+    </File>
+    <File Include="Content/js/bootstrap-tab.js">
+      <publishTime>08/31/2012 00:46:16</publishTime>
     </File>
     <File Include="Content/js/bootstrap.js">
       <publishTime>06/06/2012 13:22:32</publishTime>
@@ -280,6 +310,9 @@ by editing this MSBuild file. In order to learn more about this please visit htt
     <File Include="Content/js/galleria/themes/classic/galleria.classic.min.js">
       <publishTime>07/21/2012 12:51:41</publishTime>
     </File>
+    <File Include="Content/js/jquery-1.8.0.min.js">
+      <publishTime>08/31/2012 00:46:16</publishTime>
+    </File>
     <File Include="Content/js/jquery.flot.min.js">
       <publishTime>03/22/2011 11:30:12</publishTime>
     </File>
@@ -299,43 +332,46 @@ by editing this MSBuild file. In order to learn more about this please visit htt
       <publishTime>07/08/2012 21:54:58</publishTime>
     </File>
     <File Include="Views/Agenda/Index.cshtml">
-      <publishTime>07/12/2012 23:48:40</publishTime>
+      <publishTime>08/31/2012 00:46:16</publishTime>
     </File>
     <File Include="Views/Contato/Index.cshtml">
-      <publishTime>07/21/2012 12:51:41</publishTime>
+      <publishTime>08/23/2012 22:36:09</publishTime>
     </File>
     <File Include="Views/Divulgue/Enquete.cshtml">
-      <publishTime>08/06/2012 22:34:12</publishTime>
+      <publishTime>08/23/2012 22:36:09</publishTime>
     </File>
     <File Include="Views/Divulgue/Index.cshtml">
-      <publishTime>07/21/2012 12:51:41</publishTime>
+      <publishTime>08/23/2012 22:36:09</publishTime>
     </File>
     <File Include="Views/Gallery/Index.cshtml">
-      <publishTime>07/27/2012 23:42:14</publishTime>
+      <publishTime>08/23/2012 22:36:09</publishTime>
     </File>
     <File Include="Views/Home/Index.cshtml">
-      <publishTime>08/16/2012 00:38:07</publishTime>
+      <publishTime>09/01/2012 16:18:53</publishTime>
     </File>
     <File Include="Views/Inscricoes/Index.cshtml">
-      <publishTime>08/16/2012 00:27:47</publishTime>
+      <publishTime>08/23/2012 22:36:09</publishTime>
     </File>
     <File Include="Views/Local/Index.cshtml">
-      <publishTime>07/12/2012 23:48:40</publishTime>
+      <publishTime>08/31/2012 00:46:16</publishTime>
     </File>
     <File Include="Views/Palestrantes/Index.cshtml">
-      <publishTime>07/12/2012 23:48:40</publishTime>
+      <publishTime>08/31/2012 00:46:16</publishTime>
     </File>
     <File Include="Views/Palestras/Index.cshtml">
-      <publishTime>08/16/2012 00:33:14</publishTime>
+      <publishTime>08/31/2012 00:46:16</publishTime>
     </File>
     <File Include="Views/Patrocinadores/Index.cshtml">
-      <publishTime>08/18/2012 23:09:50</publishTime>
+      <publishTime>09/01/2012 16:40:59</publishTime>
     </File>
     <File Include="Views/Shared/Error.cshtml">
       <publishTime>07/12/2012 23:48:40</publishTime>
     </File>
+    <File Include="Views/Shared/FooterPatrocinio.cshtml">
+      <publishTime>09/01/2012 16:32:49</publishTime>
+    </File>
     <File Include="Views/Shared/_Layout.cshtml">
-      <publishTime>08/18/2012 23:10:42</publishTime>
+      <publishTime>08/31/2012 00:46:16</publishTime>
     </File>
     <File Include="Views/Web.config">
       <publishTime>07/08/2012 21:54:58</publishTime>
