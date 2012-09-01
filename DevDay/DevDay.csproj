@@ -86,6 +86,7 @@
     <Compile Include="Controllers\ContatoController.cs" />
     <Compile Include="Controllers\DivulgueController.cs" />
     <Compile Include="Controllers\AgendaController.cs" />
+    <Compile Include="Controllers\EnqueteController.cs" />
     <Compile Include="Controllers\GalleryController.cs" />
     <Compile Include="Controllers\HomeController.cs" />
     <Compile Include="Controllers\InscricoesController.cs" />
@@ -234,6 +235,7 @@
     <None Include="Properties\PublishProfiles\File.pubxml" />
     <Content Include="Views\Divulgue\Enquete.cshtml" />
     <Content Include="Views\Shared\FooterPatrocinio.cshtml" />
+    <Content Include="Views\Enquete\Index.cshtml" />
   </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>

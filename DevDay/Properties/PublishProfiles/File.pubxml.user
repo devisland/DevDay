@@ -11,7 +11,7 @@ by editing this MSBuild file. In order to learn more about this please visit htt
   </PropertyGroup>
   <ItemGroup>
     <File Include="bin/DevDay.dll">
-      <publishTime>09/01/2012 16:47:08</publishTime>
+      <publishTime>09/01/2012 19:17:12</publishTime>
     </File>
     <File Include="bin/DevDay.pdb">
       <publishTime>07/30/2012 11:58:22</publishTime>
@@ -343,11 +343,14 @@ by editing this MSBuild file. In order to learn more about this please visit htt
     <File Include="Views/Divulgue/Index.cshtml">
       <publishTime>08/23/2012 22:36:09</publishTime>
     </File>
+    <File Include="Views/Enquete/Index.cshtml">
+      <publishTime>09/01/2012 19:22:12</publishTime>
+    </File>
     <File Include="Views/Gallery/Index.cshtml">
       <publishTime>08/23/2012 22:36:09</publishTime>
     </File>
     <File Include="Views/Home/Index.cshtml">
-      <publishTime>09/01/2012 16:18:53</publishTime>
+      <publishTime>09/01/2012 19:14:52</publishTime>
     </File>
     <File Include="Views/Inscricoes/Index.cshtml">
       <publishTime>08/23/2012 22:36:09</publishTime>
