@@ -106,6 +106,7 @@
     <Content Include="Content\css\font-awesome.css" />
     <Content Include="Content\css\portfolio.css" />
     <Content Include="Content\font\fontawesome-webfont.svg" />
+    <Content Include="Content\img\foto-keynote1-alcebiades.jpg" />
     <Content Include="Content\img\auditorio1.jpg" />
     <Content Include="Content\img\auditorio2.jpg" />
     <Content Include="Content\img\auditorio3.jpg" />
@@ -145,7 +146,7 @@
     <Content Include="Content\img\patrocinadores\ouro\logouna.jpg" />
     <Content Include="Content\img\patrocinadores\prata\logoeteg.jpg" />
     <Content Include="Content\img\patrocinadores\prata\logoframework.JPG" />
-    <Content Include="Content\img\patrocinadores\prata\logoMaxtrack.JPG" />
+    <Content Include="Content\img\patrocinadores\prata\logoMxt.JPG" />
     <Content Include="Content\js\bootstrap-collapse.js" />
     <Content Include="Content\js\bootstrap-tab.js" />
     <Content Include="Content\js\galleria\plugins\facebook\loader.gif" />
