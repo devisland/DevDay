@@ -1,0 +1,52 @@
+﻿@model DevDay.Models.VM.Credential
+@{
+    ViewBag.Title = "DevDay 2012 - Belo Horizonte #DevDay - Autentique-se";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+@section js {
+    <script src="@Url.Content("~/Scripts/jquery.validate.min.js")" type="text/javascript"></script>
+    <script src="http://ajax.aspnetcdn.com/ajax/mvc/3.0/jquery.validate.unobtrusive.min.js" type="text/javascript"></script>
+}
+@section footerpatrocinio
+{
+    @Html.Partial("FooterPatrocinio")
+}
+
+<div class="hero-unit">
+    <h1>Autentique-se</h1>
+    <h3>Se já se inscreveu informe o e-mail utilizado no PagSeguro e a senha que recebeu por e-mail</h3>
+</div>
+<div class="row">
+    <div class="span12">
+        @using (Html.BeginForm("Authenticate", "Desafio", FormMethod.Post))
+        {
+            @Html.ValidationSummary(true)
+
+            <div>
+                @Html.LabelFor(model => model.Email)
+            </div>
+            <div>
+                @Html.EditorFor(model => model.Email)
+                @Html.ValidationMessageFor(model => model.Email)
+            </div>
+
+            <div>
+                @Html.LabelFor(model => model.Password)
+            </div>
+            <div>
+                @Html.EditorFor(model => model.Password)
+                @Html.ValidationMessageFor(model => model.Password)
+            </div>
+
+            <p>
+                <input type="submit" value="Entrar" class="btn btn-primary btn-info" />
+            </p>
+        }
+        @if (!string.IsNullOrWhiteSpace(ViewBag.Message))
+        {
+            <div class="alert alert-error">
+                @ViewBag.Message
+            </div>
+        }
+    </div>
+</div>

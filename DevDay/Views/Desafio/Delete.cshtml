@@ -1,0 +1,33 @@
+﻿@model DevDay.Models.Submission
+@{
+    ViewBag.Title = "DevDay 2012 - Belo Horizonte #DevDay - Deletar registro";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+@section js
+{
+    <script src="@Url.Content("~/Scripts/jquery.validate.min.js")" type="text/javascript"></script>
+    <script src="http://ajax.aspnetcdn.com/ajax/mvc/3.0/jquery.validate.unobtrusive.min.js)" type="text/javascript"></script>
+}
+@section footerpatrocinio
+{
+    @Html.Partial("FooterPatrocinio")
+}
+
+<div class="hero-unit">
+    <h1>Remover submissão</h1>
+    <h3>Tem certeza que deseja excluir a submissão: @string.Concat(Model.Name, "?")</h3>
+</div>
+<div class="row">
+    <div class="span12">
+        <p class="pull-right">
+            @Html.ActionLink("Minhas submissões", "Index", "Desafio", null, new { @class = "btn btn-primary btn-inverse" })
+            @Html.ActionLink("Logout", "Logout", "Desafio", null, new { @class = "btn btn-primary btn-inverse" })
+        </p>
+        @using (Html.BeginForm())
+        {
+            <p>
+                <input type="submit" value="Excluir" class="btn btn-danger" />
+            </p>
+        }
+    </div>
+</div>

@@ -1,0 +1,368 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="2.0" xmlns:edmx="http://schemas.microsoft.com/ado/2008/10/edmx">
+  <!-- EF Runtime content -->
+  <edmx:Runtime>
+    <!-- SSDL content -->
+    <edmx:StorageModels>
+      <Schema Namespace="DevDay.Models.Store" Alias="Self" Provider="System.Data.SqlClient" ProviderManifestToken="2008" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns="http://schemas.microsoft.com/ado/2009/02/edm/ssdl">
+        <EntityContainer Name="DevDayModelsStoreContainer">
+          <EntitySet Name="Lectures" EntityType="DevDay.Models.Store.Lectures" store:Type="Tables" Schema="dbo" />
+          <EntitySet Name="Schedules" EntityType="DevDay.Models.Store.Schedules" store:Type="Tables" Schema="dbo" />
+          <EntitySet Name="Speakers" EntityType="DevDay.Models.Store.Speakers" store:Type="Tables" Schema="dbo" />
+          <EntitySet Name="Spots" EntityType="DevDay.Models.Store.Spots" store:Type="Tables" Schema="dbo" />
+          <EntitySet Name="Submissions" EntityType="DevDay.Models.Store.Submissions" store:Type="Tables" Schema="dbo" />
+          <EntitySet Name="Users" EntityType="DevDay.Models.Store.Users" store:Type="Tables" Schema="dbo" />
+          <AssociationSet Name="FK_Lectures_Speaker" Association="DevDay.Models.Store.FK_Lectures_Speaker">
+            <End Role="Speakers" EntitySet="Speakers" />
+            <End Role="Lectures" EntitySet="Lectures" />
+          </AssociationSet>
+          <AssociationSet Name="FK_Lectures_Spot" Association="DevDay.Models.Store.FK_Lectures_Spot">
+            <End Role="Spots" EntitySet="Spots" />
+            <End Role="Lectures" EntitySet="Lectures" />
+          </AssociationSet>
+          <AssociationSet Name="FK_Schedules_Lecture" Association="DevDay.Models.Store.FK_Schedules_Lecture">
+            <End Role="Lectures" EntitySet="Lectures" />
+            <End Role="Schedules" EntitySet="Schedules" />
+          </AssociationSet>
+          <AssociationSet Name="FK_Schedules_User" Association="DevDay.Models.Store.FK_Schedules_User">
+            <End Role="Users" EntitySet="Users" />
+            <End Role="Schedules" EntitySet="Schedules" />
+          </AssociationSet>
+          <AssociationSet Name="FK_Submissions_User" Association="DevDay.Models.Store.FK_Submissions_User">
+            <End Role="Users" EntitySet="Users" />
+            <End Role="Submissions" EntitySet="Submissions" />
+          </AssociationSet>
+        </EntityContainer>
+        <EntityType Name="Lectures">
+          <Key>
+            <PropertyRef Name="ID" />
+          </Key>
+          <Property Name="ID" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+          <Property Name="Name" Type="nvarchar" Nullable="false" MaxLength="250" />
+          <Property Name="Description" Type="nvarchar" Nullable="false" MaxLength="500" />
+          <Property Name="SpeakerID" Type="int" Nullable="false" />
+          <Property Name="StartingOn" Type="datetime2" Nullable="false" />
+          <Property Name="EndingOn" Type="datetime2" Nullable="false" />
+          <Property Name="SpotID" Type="int" Nullable="false" />
+        </EntityType>
+        <EntityType Name="Schedules">
+          <Key>
+            <PropertyRef Name="UserID" />
+            <PropertyRef Name="LectureID" />
+          </Key>
+          <Property Name="UserID" Type="int" Nullable="false" />
+          <Property Name="LectureID" Type="int" Nullable="false" />
+        </EntityType>
+        <EntityType Name="Speakers">
+          <Key>
+            <PropertyRef Name="ID" />
+          </Key>
+          <Property Name="ID" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+          <Property Name="Name" Type="nvarchar" Nullable="false" MaxLength="50" />
+          <Property Name="Email" Type="varchar" Nullable="false" MaxLength="50" />
+        </EntityType>
+        <EntityType Name="Spots">
+          <Key>
+            <PropertyRef Name="ID" />
+          </Key>
+          <Property Name="ID" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+          <Property Name="Name" Type="nvarchar" Nullable="false" MaxLength="50" />
+          <Property Name="Size" Type="int" Nullable="false" />
+        </EntityType>
+        <EntityType Name="Submissions">
+          <Key>
+            <PropertyRef Name="ID" />
+          </Key>
+          <Property Name="ID" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+          <Property Name="UserID" Type="int" Nullable="false" />
+          <Property Name="Name" Type="nvarchar" Nullable="false" MaxLength="50" />
+          <Property Name="Description" Type="varchar" Nullable="false" MaxLength="250" />
+          <Property Name="CreatedOn" Type="datetime2" Nullable="false" />
+          <Property Name="ModifiedOn" Type="datetime2" Nullable="false" />
+          <Property Name="FilePath" Type="varchar" MaxLength="250" />
+        </EntityType>
+        <EntityType Name="Users">
+          <Key>
+            <PropertyRef Name="ID" />
+          </Key>
+          <Property Name="ID" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+          <Property Name="Name" Type="nvarchar" Nullable="false" MaxLength="50" />
+          <Property Name="Email" Type="varchar" Nullable="false" MaxLength="50" />
+          <Property Name="Password" Type="varchar" Nullable="false" MaxLength="50" />
+        </EntityType>
+        <Association Name="FK_Lectures_Speaker">
+          <End Role="Speakers" Type="DevDay.Models.Store.Speakers" Multiplicity="1" />
+          <End Role="Lectures" Type="DevDay.Models.Store.Lectures" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Speakers">
+              <PropertyRef Name="ID" />
+            </Principal>
+            <Dependent Role="Lectures">
+              <PropertyRef Name="SpeakerID" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_Lectures_Spot">
+          <End Role="Spots" Type="DevDay.Models.Store.Spots" Multiplicity="1" />
+          <End Role="Lectures" Type="DevDay.Models.Store.Lectures" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Spots">
+              <PropertyRef Name="ID" />
+            </Principal>
+            <Dependent Role="Lectures">
+              <PropertyRef Name="SpotID" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_Schedules_Lecture">
+          <End Role="Lectures" Type="DevDay.Models.Store.Lectures" Multiplicity="1" />
+          <End Role="Schedules" Type="DevDay.Models.Store.Schedules" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Lectures">
+              <PropertyRef Name="ID" />
+            </Principal>
+            <Dependent Role="Schedules">
+              <PropertyRef Name="LectureID" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_Schedules_User">
+          <End Role="Users" Type="DevDay.Models.Store.Users" Multiplicity="1" />
+          <End Role="Schedules" Type="DevDay.Models.Store.Schedules" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Users">
+              <PropertyRef Name="ID" />
+            </Principal>
+            <Dependent Role="Schedules">
+              <PropertyRef Name="UserID" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_Submissions_User">
+          <End Role="Users" Type="DevDay.Models.Store.Users" Multiplicity="1" />
+          <End Role="Submissions" Type="DevDay.Models.Store.Submissions" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Users">
+              <PropertyRef Name="ID" />
+            </Principal>
+            <Dependent Role="Submissions">
+              <PropertyRef Name="UserID" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+      </Schema>
+    </edmx:StorageModels>
+    <!-- CSDL content -->
+    <edmx:ConceptualModels>
+      <Schema Namespace="DevDay.Models" Alias="Self" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns="http://schemas.microsoft.com/ado/2008/09/edm">
+        <EntityContainer Name="DevdayEntities" annotation:LazyLoadingEnabled="true">
+          <EntitySet Name="Lectures" EntityType="DevDay.Models.Lecture" />
+          <EntitySet Name="Speakers" EntityType="DevDay.Models.Speaker" />
+          <EntitySet Name="Spots" EntityType="DevDay.Models.Spot" />
+          <EntitySet Name="Submissions" EntityType="DevDay.Models.Submission" />
+          <EntitySet Name="Users" EntityType="DevDay.Models.User" />
+          <AssociationSet Name="FK_Lectures_Speaker" Association="DevDay.Models.FK_Lectures_Speaker">
+            <End Role="Speakers" EntitySet="Speakers" />
+            <End Role="Lectures" EntitySet="Lectures" />
+          </AssociationSet>
+          <AssociationSet Name="FK_Lectures_Spot" Association="DevDay.Models.FK_Lectures_Spot">
+            <End Role="Spots" EntitySet="Spots" />
+            <End Role="Lectures" EntitySet="Lectures" />
+          </AssociationSet>
+          <AssociationSet Name="FK_Submissions_User" Association="DevDay.Models.FK_Submissions_User">
+            <End Role="Users" EntitySet="Users" />
+            <End Role="Submissions" EntitySet="Submissions" />
+          </AssociationSet>
+          <AssociationSet Name="Schedules" Association="DevDay.Models.Schedules">
+            <End Role="Lectures" EntitySet="Lectures" />
+            <End Role="Users" EntitySet="Users" />
+          </AssociationSet>
+        </EntityContainer>
+        <EntityType Name="Lecture">
+          <Key>
+            <PropertyRef Name="ID" />
+          </Key>
+          <Property Name="ID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="Name" Type="String" Nullable="false" MaxLength="250" Unicode="true" FixedLength="false" />
+          <Property Name="Description" Type="String" Nullable="false" MaxLength="500" Unicode="true" FixedLength="false" />
+          <Property Name="SpeakerID" Type="Int32" Nullable="false" />
+          <Property Name="StartingOn" Type="DateTime" Nullable="false" Precision="7" />
+          <Property Name="EndingOn" Type="DateTime" Nullable="false" Precision="7" />
+          <Property Name="SpotID" Type="Int32" Nullable="false" />
+          <NavigationProperty Name="Speaker" Relationship="DevDay.Models.FK_Lectures_Speaker" FromRole="Lectures" ToRole="Speakers" />
+          <NavigationProperty Name="Spot" Relationship="DevDay.Models.FK_Lectures_Spot" FromRole="Lectures" ToRole="Spots" />
+          <NavigationProperty Name="Users" Relationship="DevDay.Models.Schedules" FromRole="Lectures" ToRole="Users" />
+        </EntityType>
+        <EntityType Name="Speaker">
+          <Key>
+            <PropertyRef Name="ID" />
+          </Key>
+          <Property Name="ID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="Name" Type="String" Nullable="false" MaxLength="50" Unicode="true" FixedLength="false" />
+          <Property Name="Email" Type="String" Nullable="false" MaxLength="50" Unicode="false" FixedLength="false" />
+          <NavigationProperty Name="Lectures" Relationship="DevDay.Models.FK_Lectures_Speaker" FromRole="Speakers" ToRole="Lectures" />
+        </EntityType>
+        <EntityType Name="Spot">
+          <Key>
+            <PropertyRef Name="ID" />
+          </Key>
+          <Property Name="ID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="Name" Type="String" Nullable="false" MaxLength="50" Unicode="true" FixedLength="false" />
+          <Property Name="Size" Type="Int32" Nullable="false" />
+          <NavigationProperty Name="Lectures" Relationship="DevDay.Models.FK_Lectures_Spot" FromRole="Spots" ToRole="Lectures" />
+        </EntityType>
+        <EntityType Name="Submission">
+          <Key>
+            <PropertyRef Name="ID" />
+          </Key>
+          <Property Name="ID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="UserID" Type="Int32" Nullable="false" />
+          <Property Name="Name" Type="String" Nullable="false" MaxLength="50" Unicode="true" FixedLength="false" />
+          <Property Name="Description" Type="String" Nullable="false" MaxLength="250" Unicode="false" FixedLength="false" />
+          <Property Name="CreatedOn" Type="DateTime" Nullable="false" Precision="7" />
+          <Property Name="ModifiedOn" Type="DateTime" Nullable="false" Precision="7" />
+          <Property Name="FilePath" Type="String" MaxLength="250" Unicode="false" FixedLength="false" />
+          <NavigationProperty Name="User" Relationship="DevDay.Models.FK_Submissions_User" FromRole="Submissions" ToRole="Users" />
+        </EntityType>
+        <EntityType Name="User">
+          <Key>
+            <PropertyRef Name="ID" />
+          </Key>
+          <Property Name="ID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="Name" Type="String" Nullable="false" MaxLength="50" Unicode="true" FixedLength="false" />
+          <Property Name="Email" Type="String" Nullable="false" MaxLength="50" Unicode="false" FixedLength="false" />
+          <Property Name="Password" Type="String" Nullable="false" MaxLength="50" Unicode="false" FixedLength="false" />
+          <NavigationProperty Name="Submissions" Relationship="DevDay.Models.FK_Submissions_User" FromRole="Users" ToRole="Submissions" />
+          <NavigationProperty Name="Lectures" Relationship="DevDay.Models.Schedules" FromRole="Users" ToRole="Lectures" />
+        </EntityType>
+        <Association Name="FK_Lectures_Speaker">
+          <End Role="Speakers" Type="DevDay.Models.Speaker" Multiplicity="1" />
+          <End Role="Lectures" Type="DevDay.Models.Lecture" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Speakers">
+              <PropertyRef Name="ID" />
+            </Principal>
+            <Dependent Role="Lectures">
+              <PropertyRef Name="SpeakerID" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_Lectures_Spot">
+          <End Role="Spots" Type="DevDay.Models.Spot" Multiplicity="1" />
+          <End Role="Lectures" Type="DevDay.Models.Lecture" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Spots">
+              <PropertyRef Name="ID" />
+            </Principal>
+            <Dependent Role="Lectures">
+              <PropertyRef Name="SpotID" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_Submissions_User">
+          <End Role="Users" Type="DevDay.Models.User" Multiplicity="1" />
+          <End Role="Submissions" Type="DevDay.Models.Submission" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Users">
+              <PropertyRef Name="ID" />
+            </Principal>
+            <Dependent Role="Submissions">
+              <PropertyRef Name="UserID" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="Schedules">
+          <End Role="Lectures" Type="DevDay.Models.Lecture" Multiplicity="*" />
+          <End Role="Users" Type="DevDay.Models.User" Multiplicity="*" />
+        </Association>
+      </Schema>
+    </edmx:ConceptualModels>
+    <!-- C-S mapping content -->
+    <edmx:Mappings>
+      <Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2008/09/mapping/cs">
+        <EntityContainerMapping StorageEntityContainer="DevDayModelsStoreContainer" CdmEntityContainer="DevdayEntities">
+          <EntitySetMapping Name="Lectures">
+            <EntityTypeMapping TypeName="DevDay.Models.Lecture">
+              <MappingFragment StoreEntitySet="Lectures">
+                <ScalarProperty Name="ID" ColumnName="ID" />
+                <ScalarProperty Name="Name" ColumnName="Name" />
+                <ScalarProperty Name="Description" ColumnName="Description" />
+                <ScalarProperty Name="SpeakerID" ColumnName="SpeakerID" />
+                <ScalarProperty Name="StartingOn" ColumnName="StartingOn" />
+                <ScalarProperty Name="EndingOn" ColumnName="EndingOn" />
+                <ScalarProperty Name="SpotID" ColumnName="SpotID" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="Speakers">
+            <EntityTypeMapping TypeName="DevDay.Models.Speaker">
+              <MappingFragment StoreEntitySet="Speakers">
+                <ScalarProperty Name="ID" ColumnName="ID" />
+                <ScalarProperty Name="Name" ColumnName="Name" />
+                <ScalarProperty Name="Email" ColumnName="Email" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="Spots">
+            <EntityTypeMapping TypeName="DevDay.Models.Spot">
+              <MappingFragment StoreEntitySet="Spots">
+                <ScalarProperty Name="ID" ColumnName="ID" />
+                <ScalarProperty Name="Name" ColumnName="Name" />
+                <ScalarProperty Name="Size" ColumnName="Size" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="Submissions">
+            <EntityTypeMapping TypeName="DevDay.Models.Submission">
+              <MappingFragment StoreEntitySet="Submissions">
+                <ScalarProperty Name="ID" ColumnName="ID" />
+                <ScalarProperty Name="UserID" ColumnName="UserID" />
+                <ScalarProperty Name="Name" ColumnName="Name" />
+                <ScalarProperty Name="Description" ColumnName="Description" />
+                <ScalarProperty Name="CreatedOn" ColumnName="CreatedOn" />
+                <ScalarProperty Name="ModifiedOn" ColumnName="ModifiedOn" />
+                <ScalarProperty Name="FilePath" ColumnName="FilePath" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="Users">
+            <EntityTypeMapping TypeName="DevDay.Models.User">
+              <MappingFragment StoreEntitySet="Users">
+                <ScalarProperty Name="ID" ColumnName="ID" />
+                <ScalarProperty Name="Name" ColumnName="Name" />
+                <ScalarProperty Name="Email" ColumnName="Email" />
+                <ScalarProperty Name="Password" ColumnName="Password" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <AssociationSetMapping Name="Schedules" TypeName="DevDay.Models.Schedules" StoreEntitySet="Schedules">
+            <EndProperty Name="Lectures">
+              <ScalarProperty Name="ID" ColumnName="LectureID" />
+            </EndProperty>
+            <EndProperty Name="Users">
+              <ScalarProperty Name="ID" ColumnName="UserID" />
+            </EndProperty>
+          </AssociationSetMapping>
+        </EntityContainerMapping>
+      </Mapping>
+    </edmx:Mappings>
+  </edmx:Runtime>
+  <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <Designer xmlns="http://schemas.microsoft.com/ado/2008/10/edmx">
+    <Connection>
+      <DesignerInfoPropertySet>
+        <DesignerProperty Name="MetadataArtifactProcessing" Value="EmbedInOutputAssembly" />
+      </DesignerInfoPropertySet>
+    </Connection>
+    <Options>
+      <DesignerInfoPropertySet>
+        <DesignerProperty Name="ValidateOnBuild" Value="true" />
+        <DesignerProperty Name="EnablePluralization" Value="False" />
+        <DesignerProperty Name="IncludeForeignKeysInModel" Value="True" />
+        <DesignerProperty Name="CodeGenerationStrategy" Value="None" />
+      </DesignerInfoPropertySet>
+    </Options>
+    <!-- Diagram content (shape and connector positions) -->
+    <Diagrams></Diagrams>
+  </Designer>
+</edmx:Edmx>

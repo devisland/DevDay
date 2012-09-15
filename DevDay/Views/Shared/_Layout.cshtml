@@ -38,22 +38,29 @@ see http://www.gnu.org/licenses/.
         <img style="position: absolute; top: 0; right: 0; border: 0;" src="@Url.Content("~/Content/img/bannerdata.png")" alt="Fork me on GitHub">
     </a>
     <div class="container">
-        <div class="">
-            <br />
-            <img src="@Url.Content("~/Content/img/devday2.png")" width="200px" alt="" />
+        <div style="margin-top: 10px;">
+            <img src="@Url.Content("~/Content/img/devday2.png")" width="200px" alt="logo" />
             <ul class="nav nav-pills pull-right">
                 <li>@Html.ActionLink("Home", "Index", "Home")</li>
                 <li>@Html.ActionLink("Palestras", "Index", "Palestras")</li>
                 <li>@Html.ActionLink("Palestrantes", "Index", "Palestrantes")</li>
-                <li>@Html.ActionLink("Inscrições", "Index", "Inscricoes")</li>
+                <li class="dropdown">
+                    <a class="dropdown-toggle"
+                        data-toggle="dropdown"
+                        href="#">Inscrições<b class="caret"></b>
+                    </a>
+                    <ul class="dropdown-menu">
+                        <li>@Html.ActionLink("Evento", "Index", "Inscricoes")</li>
+                        <li>@Html.ActionLink("Desafio", "Authenticate", "Desafio")</li>
+                    </ul>
+                </li>
                 <li>@Html.ActionLink("Local", "Index", "Local")</li>
                 <li>@Html.ActionLink("Agenda", "Index", "Agenda")</li>
                 <li>@Html.ActionLink("Patrocinadores", "Index", "Patrocinadores")</li>
                 <li>@Html.ActionLink("Edições Anteriores", "Index", "Gallery")</li>
-                <li>@Html.ActionLink("Contato", "Index", "Contato")</li>
-                <li>@Html.ActionLink("Divulgue", "Index", "Divulgue")</li>
             </ul>
         </div>
+
         @RenderBody()
     </div>
     <br />
@@ -64,7 +71,7 @@ see http://www.gnu.org/licenses/.
                 data-show-faces="true" data-action="recommend">
             </div>
             <div>
-                &copy; DevIsland 2012
+                &copy; DevIsland 2012 - Contatos: Gibran Silva (<a href="http://twitter.com/ggibran">@Html.Raw("@ggibran")</a>, gibran.silva@gmail.com) e Douglas Aguiar (<a href="http://twitter.com/DouglasAguiar">@Html.Raw("@DouglasAguiar")</a>, doaguiar@gmail.com)
             </div>
         </div>
     </div>

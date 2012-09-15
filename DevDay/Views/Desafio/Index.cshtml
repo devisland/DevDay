@@ -1,0 +1,97 @@
+﻿@model IEnumerable<DevDay.Models.Submission>
+@{
+    ViewBag.Title = "DevDay 2012 - Belo Horizonte #DevDay - Minhas submissões";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+    var message = (string)TempData["Message"];
+}
+@section footerpatrocinio
+{
+    @Html.Partial("FooterPatrocinio")
+}
+<div class="hero-unit">
+    <h1>Minhas submissões</h1>
+</div>
+<div class="row">
+    <div class="span12">
+        <p class="pull-right">
+            @Html.ActionLink("Minhas submissões", "Index", "Desafio", null, new { @class = "btn btn-primary btn-inverse" })
+            @Html.ActionLink("Logout", "Logout", "Desafio", null, new { @class = "btn btn-primary btn-inverse" })
+        </p>
+        <h2>Olá @string.Concat(ViewBag.Username, "!")</h2>
+        <p>
+            Inscreva seu aplicativo para Windows 8 até dia <strong>1 de Outubro</strong>!
+        </p>
+        <br />
+        @if (DateTime.Now.CompareTo(new DateTime(2012, 10, 1, 23, 59, 59)) > 0)
+        {
+            <div class="well alert alert-info">
+                <p>O prazo para a submissão de aplicativos foi encerrado.</p>
+            </div>
+        }
+        else
+        {
+            <div class="well">
+                @Html.ActionLink("Submeter novo aplicativo", "Create", null, new { @class = "btn btn-primary btn-info" })
+            </div>
+        }
+
+        @if (!string.IsNullOrWhiteSpace(ViewBag.Message))
+        {
+            <div class="well alert alert-error">
+                @ViewBag.Message
+            </div>
+        }
+        
+        @if (!string.IsNullOrWhiteSpace(message))
+        {
+            <div class="well alert alert-error">
+                @message
+            </div>
+        }
+        
+        @if (Model != null && Model.Any())
+        {
+            <div class="well">
+                <table class="table table-striped table-bordered table-condensed">
+                    <thead>
+                        <tr>
+                            <th>Nome
+                            </th>
+                            <th>Data da submissão
+                            </th>
+                            <th>Enviado?</th>
+                            <th></th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        @foreach (var item in Model)
+                        {
+                            <tr>
+                                <td>
+                                    @Html.DisplayFor(modelItem => item.Name)
+                                </td>
+                                <td>
+                                    @Html.DisplayFor(modelItem => item.CreatedOn)
+                                </td>
+                                <td>
+                                    @if (string.IsNullOrWhiteSpace(item.FilePath))
+                                    {
+                                        <span>Não</span> 
+                                    }
+                                    else
+                                    {
+                                        <span>Sim</span>
+                                    }
+                                </td>
+                                <td>
+                                    @Html.ActionLink("Editar", "Edit", new { id = item.ID }, new { @class = "btn btn-small" })
+                                    @Html.ActionLink("Excluir", "Delete", new { id = item.ID }, new { @class = "btn btn-small" })
+                                </td>
+                            </tr>
+                        }
+                    </tbody>
+                </table>
+            </div>
+        }
+    </div>
+</div>

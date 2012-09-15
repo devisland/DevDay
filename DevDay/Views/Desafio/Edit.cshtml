@@ -1,0 +1,59 @@
+﻿@model DevDay.Models.Submission
+@{
+    ViewBag.Title = "DevDay 2012 - Belo Horizonte #DevDay - Atualizar submissão";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+@section js
+{
+    <script src="@Url.Content("~/Scripts/jquery.validate.min.js")" type="text/javascript"></script>
+    <script src="http://ajax.aspnetcdn.com/ajax/mvc/3.0/jquery.validate.unobtrusive.min.js)" type="text/javascript"></script>
+}
+@section footerpatrocinio
+{
+    @Html.Partial("FooterPatrocinio")
+}
+<div class="hero-unit">
+    <h1>Editar submissão</h1>
+</div>
+<div class="row">
+    <div class="span12">
+        <p class="pull-right">
+            @Html.ActionLink("Minhas submissões", "Index", "Desafio", null, new { @class = "btn btn-primary btn-inverse" })
+            @Html.ActionLink("Logout", "Logout", "Desafio", null, new { @class = "btn btn-primary btn-inverse" })
+        </p>
+        @using (Html.BeginForm("Edit", "Desafio", FormMethod.Post, new { enctype = "multipart/form-data" }))
+        {
+            @Html.ValidationSummary(true)
+            <fieldset>
+                <legend>Submission</legend>
+
+                @Html.HiddenFor(model => model.ID)
+
+                <div>
+                    @Html.LabelFor(model => model.Name)
+                </div>
+                <div>
+                    @Html.EditorFor(model => model.Name)
+                    @Html.ValidationMessageFor(model => model.Name)
+                </div>
+
+                <div>
+                    @Html.LabelFor(model => model.Description)
+                </div>
+                <div>
+                    @Html.TextAreaFor(model => model.Description, new { style = "width: 350px; height: 100px;" })
+                    @Html.ValidationMessageFor(model => model.Description)
+                </div>
+                <div>
+                    Arquivo (.zip) da app
+                </div>
+                <div>
+                    <input type="file" name="App" />
+                </div>
+                <p>
+                    <input type="submit" value="Atualizar" class="btn btn-primary btn-info" />
+                </p>
+            </fieldset>
+        }
+    </div>
+</div>

@@ -1,32 +1,13 @@
-﻿/*
-Copyright 2011 Douglas Aguiar<doaguiar@gmail.com>
-Copyright 2012 Douglas Aguiar<doaguiar@gmail.com>, Glauco Vinicius<gl4uc0@gmail.com>
-
-This file is part of DevDay website.
-
-DevDay website is free software: you can redistribute it and/or modify it under the terms of the GNU General Public 
-License as published by the Free Software Foundation, either version 3 of the License, or (at your option) any later 
-version.
-
-DevDay website is distributed in the hope that it will be useful, but WITHOUT ANY WARRANTY; without even the implied 
-warranty of MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE. See the GNU General Public License for more details.
-
-You should have received a copy of the GNU General Public License along with DevDay website. If not, 
-see http://www.gnu.org/licenses/.
-*/
-
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Web;
+﻿using System;
+using System.Security.Principal;
+using System.Threading;
 using System.Web.Mvc;
 using System.Web.Routing;
+using System.Web.Security;
+using DevDay.Authentication;
 
 namespace DevDay
 {
-    // Note: For instructions on enabling IIS6 or IIS7 classic mode, 
-    // visit http://go.microsoft.com/?LinkId=9394801
-
     public class MvcApplication : System.Web.HttpApplication
     {
         public static void RegisterGlobalFilters(GlobalFilterCollection filters)
@@ -52,6 +33,28 @@ namespace DevDay
 
             RegisterGlobalFilters(GlobalFilters.Filters);
             RegisterRoutes(RouteTable.Routes);
+        }
+
+        public override void Init()
+        {
+            PostAuthenticateRequest += OnPostAuthenticateRequestHandler;
+
+            base.Init();
+        }
+
+        private void OnPostAuthenticateRequestHandler(object sender, EventArgs e)
+        {
+            var formsCookie = Request.Cookies[FormsAuthentication.FormsCookieName];
+
+            if (formsCookie == null) return;
+
+            var auth = FormsAuthentication.Decrypt(formsCookie.Value);
+
+            var userID = int.Parse(auth.UserData);
+
+            var principal = new CustomPrincipal(Roles.Provider.Name, new GenericIdentity(auth.Name), userID);
+
+            Context.User = Thread.CurrentPrincipal = principal;
         }
     }
 }
