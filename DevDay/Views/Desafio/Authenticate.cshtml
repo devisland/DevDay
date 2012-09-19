@@ -16,9 +16,19 @@
     <h1>Autentique-se</h1>
     <h3>Se já se inscreveu informe o e-mail utilizado no PagSeguro</h3>
 </div>
-<div class="row">
-    <div class="span12">
-        <div class="well">
+<div class="row home-columns">
+    <div class="span4 home-column clearfix">
+        <i class="icon-download-alt pull-left"></i>
+        <div class="content">
+            <h2>Download das regras</h2>
+            <p>
+                Clique <a href="@Url.Content("~/Content/download/RegrasOficiais.pdf")">aqui</a> para fazer o download das regras oficiais.
+            </p>
+        </div>
+    </div>
+    <div class="span4 home-column clearfix">
+        <i class="icon-search pull-left"></i>
+        <div class="content">
             <fieldset>
                 <legend>Solicitar senha de acesso</legend>
                 @using (Html.BeginForm("SendPassword", "Desafio", FormMethod.Post))
@@ -28,6 +38,8 @@
                     </div>
                     <div>
                         @Html.EditorFor(model => model.Email)
+                    </div>
+                    <div>
                         @Html.ValidationMessageFor(model => model.Email)
                     </div>
                     <p>
@@ -36,7 +48,10 @@
                 }
             </fieldset>
         </div>
-        <div class="well">
+    </div>
+    <div class="span4 home-column clearfix">
+        <i class="icon-user pull-left"></i>
+        <div class="content">
             <fieldset>
                 <legend>Autenticar-se</legend>
                 @using (Html.BeginForm("Authenticate", "Desafio", FormMethod.Post))
@@ -48,29 +63,32 @@
                     </div>
                     <div>
                         @Html.EditorFor(model => model.Email)
+                    </div>
+                    <div>
                         @Html.ValidationMessageFor(model => model.Email)
                     </div>
-
                     <div>
                         @Html.LabelFor(model => model.Password)
                     </div>
                     <div>
                         @Html.EditorFor(model => model.Password)
+                    </div>
+                    <div>
                         @Html.ValidationMessageFor(model => model.Password)
                     </div>
-
                     <p>
                         <input type="submit" value="Entrar" class="btn btn-primary btn-info" />
                     </p>
-            
                 }
             </fieldset>
         </div>
-        @if (!string.IsNullOrWhiteSpace(ViewBag.Message))
-        {
-            <div class="alert">
-                @ViewBag.Message
-            </div>
-        }
     </div>
 </div>
+@if (!string.IsNullOrWhiteSpace(ViewBag.Message))
+{
+    <div class="row">
+        <div class="span12 alert">
+            @ViewBag.Message
+        </div>
+    </div>
+}
