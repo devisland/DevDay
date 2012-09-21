@@ -1,6 +1,4 @@
 ﻿using System;
-using System.Data;
-using System.Data.Entity.Infrastructure;
 using System.Globalization;
 using System.Linq;
 using System.Web;

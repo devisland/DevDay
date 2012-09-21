@@ -245,6 +245,7 @@
     </Content>
     <Content Include="Content\download\RegrasOficiais.pdf" />
     <None Include="Scripts\jquery-1.4.4-vsdoc.js" />
+    <Content Include="Scripts\gauge.min.js" />
     <Content Include="Scripts\jquery-1.4.4.js" />
     <Content Include="Scripts\jquery-1.4.4.min.js" />
     <None Include="Scripts\jquery.validate-vsdoc.js" />
@@ -264,6 +265,7 @@
     <Content Include="Views\Shared\Error.cshtml" />
     <Content Include="Views\Shared\_Layout.cshtml" />
     <Content Include="Views\Web.config" />
+    <Content Include="Views\Inscricoes\Stats.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
