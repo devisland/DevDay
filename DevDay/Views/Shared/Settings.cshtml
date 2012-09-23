@@ -1,0 +1,16 @@
+﻿@using DevDay.Helpers
+@model DevDay.Models.User
+@using (Html.BeginForm("Update", "Account", FormMethod.Post, new { @class = "form-inline" }))
+{
+    <label class="checkbox">
+        @Html.EditorFor(model => model.IsCompetitor) Vou participar do desafio
+    </label>
+}
+
+@Html.Script(
+    @<script type="text/javascript">
+         $('#IsCompetitor').click(function () {
+             $(this).closest('form').submit();
+         })
+    </script>
+)

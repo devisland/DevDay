@@ -31,7 +31,7 @@
         <div class="content">
             <fieldset>
                 <legend>Solicitar senha de acesso</legend>
-                @using (Html.BeginForm("SendPassword", "Desafio", FormMethod.Post))
+                @using (Html.BeginForm("SendPassword", "Account", FormMethod.Post))
                 {
                     <div>
                         @Html.LabelFor(model => model.Email)
@@ -54,7 +54,7 @@
         <div class="content">
             <fieldset>
                 <legend>Autenticar-se</legend>
-                @using (Html.BeginForm("Authenticate", "Desafio", FormMethod.Post))
+                @using (Html.BeginForm("Authenticate", "Account", FormMethod.Post))
                 {
                     @Html.ValidationSummary(true)
 

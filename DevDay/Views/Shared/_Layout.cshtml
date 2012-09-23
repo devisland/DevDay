@@ -1,4 +1,5 @@
-﻿<!--
+﻿@using DevDay.Helpers
+<!--
 Copyright 2011 Douglas Aguiar<doaguiar@gmail.com>
 Copyright 2012 Douglas Aguiar<doaguiar@gmail.com>, Glauco Vinicius<gl4uc0@gmail.com>, Gibran Silva <gibran.silva@gmail.com>, Renato Saito <renato.saito@live.com>
 
@@ -51,7 +52,7 @@ see http://www.gnu.org/licenses/.
                     </a>
                     <ul class="dropdown-menu">
                         <li>@Html.ActionLink("Evento", "Index", "Inscricoes")</li>
-                        <li>@Html.ActionLink("Desafio", "Authenticate", "Desafio")</li>
+                        <li>@Html.ActionLink("Desafio", "Authenticate", "Account")</li>
                     </ul>
                 </li>
                 <li>@Html.ActionLink("Local", "Index", "Local")</li>
@@ -78,6 +79,7 @@ see http://www.gnu.org/licenses/.
     <script src="@Url.Content("~/Content/js/jquery-1.8.0.min.js")" type="text/javascript"></script>
     <script src="@Url.Content("~/Content/js/bootstrap.js")" type="text/javascript"></script>
     @RenderSection("js", false)
+    @Html.RenderScripts()
     <script type="text/javascript">
         (function (d, s, id) {
             var js, fjs = d.getElementsByTagName(s)[0];

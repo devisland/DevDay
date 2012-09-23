@@ -24,6 +24,8 @@ namespace DevDay.Models
         public string Name { get; set; }
         public string Email { get; set; }
         public string Password { get; set; }
+        public bool IsCompetitor { get; set; }
+        public Nullable<System.DateTime> LastLoggedOn { get; set; }
     
         public virtual ICollection<Submission> Submissions { get; set; }
         public virtual ICollection<Lecture> Lectures { get; set; }

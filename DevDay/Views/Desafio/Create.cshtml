@@ -17,10 +17,7 @@
 </div>
 <div class="row">
     <div class="span12">
-        <p class="pull-right">
-            @Html.ActionLink("Minhas submissões", "Index", "Desafio", null, new { @class = "btn btn-primary btn-inverse" })
-            @Html.ActionLink("Logout", "Logout", "Desafio", null, new { @class = "btn btn-primary btn-inverse" })
-        </p>
+        @Html.Partial("Menu")
         @using (Html.BeginForm("Create", "Desafio", FormMethod.Post, new { enctype = "multipart/form-data" }))
         {
             @Html.ValidationSummary(true)
@@ -40,12 +37,14 @@
                     @Html.TextAreaFor(model => model.Description, new { style = "width: 350px; height: 100px;" })
                     @Html.ValidationMessageFor(model => model.Description)
                 </div>
-                <div>
-                    Arquivo (.zip) da app
-                </div>
-                <div>
-                    <input type="file" name="App" class="input-medium" />
-                </div>
+                <!-- upload
+                    <div>
+                        Arquivo (.zip) da app
+                    </div>
+                    <div>
+                        <input type="file" name="App" class="input-medium" />
+                    </div>
+                -->
                 <p>
                     <input type="submit" value="Submeter" class="btn btn-primary btn-info" />
                 </p>

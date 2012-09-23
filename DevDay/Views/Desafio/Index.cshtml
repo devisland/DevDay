@@ -13,15 +13,13 @@
 </div>
 <div class="row">
     <div class="span12">
-        <p class="pull-right">
-            @Html.ActionLink("Minhas submissões", "Index", "Desafio", null, new { @class = "btn btn-primary btn-inverse" })
-            @Html.ActionLink("Logout", "Logout", "Desafio", null, new { @class = "btn btn-primary btn-inverse" })
-        </p>
-        <h2>Olá @string.Concat(ViewBag.Username, "!")</h2>
+        @Html.Partial("Menu")
+        <h2>Olá @string.Concat(ViewBag.User.Name, "!")</h2>
         <p>
             Inscreva seu aplicativo para Windows 8 até dia <strong>1 de Outubro</strong>!
         </p>
         <br />
+        @Html.Partial("Settings", (DevDay.Models.User)ViewBag.User)
         @if (DateTime.Now.CompareTo(new DateTime(2012, 10, 1, 23, 59, 59)) > 0)
         {
             <div class="well alert alert-info">
@@ -37,18 +35,18 @@
 
         @if (!string.IsNullOrWhiteSpace(ViewBag.Message))
         {
-            <div class="well alert alert-error">
+            <div class="well alert">
                 @ViewBag.Message
             </div>
         }
-        
+
         @if (!string.IsNullOrWhiteSpace(message))
         {
-            <div class="well alert alert-error">
+            <div class="well alert">
                 @message
             </div>
         }
-        
+
         @if (Model != null && Model.Any())
         {
             <div class="well">
@@ -59,7 +57,9 @@
                             </th>
                             <th>Data da submissão
                             </th>
-                            <th>Enviado?</th>
+                            <!--
+                                <th>Enviado?</th>
+                            -->
                             <th></th>
                         </tr>
                     </thead>
@@ -73,16 +73,18 @@
                                 <td>
                                     @Html.DisplayFor(modelItem => item.CreatedOn)
                                 </td>
-                                <td>
-                                    @if (string.IsNullOrWhiteSpace(item.FilePath))
-                                    {
-                                        <span>Não</span> 
-                                    }
-                                    else
-                                    {
-                                        <span>Sim</span>
-                                    }
-                                </td>
+                                <!--
+                                    <td>
+                                        @if (string.IsNullOrWhiteSpace(item.FilePath))
+                                        {
+                                            <span>Não</span> 
+                                        }
+                                        else
+                                        {
+                                            <span>Sim</span>
+                                        }
+                                    </td>
+                                -->
                                 <td>
                                     @Html.ActionLink("Editar", "Edit", new { id = item.ID }, new { @class = "btn btn-small" })
                                     @Html.ActionLink("Excluir", "Delete", new { id = item.ID }, new { @class = "btn btn-small" })

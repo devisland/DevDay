@@ -90,6 +90,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Authentication\CustomPrincipal.cs" />
+    <Compile Include="Controllers\AccountController.cs" />
     <Compile Include="Controllers\ContatoController.cs" />
     <Compile Include="Controllers\DesafioController.cs" />
     <Compile Include="Controllers\DivulgueController.cs" />
@@ -105,6 +106,7 @@
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
+    <Compile Include="Helpers\HtmlExtensions.cs" />
     <Compile Include="Helpers\MailHelper.cs" />
     <Compile Include="Models\Lecture.cs">
       <DependentUpon>Model.tt</DependentUpon>
@@ -138,6 +140,7 @@
     </Compile>
     <Compile Include="Models\VM\Credential.cs" />
     <Compile Include="Models\VM\Submission.cs" />
+    <Compile Include="Models\VM\User.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
@@ -266,6 +269,8 @@
     <Content Include="Views\Shared\_Layout.cshtml" />
     <Content Include="Views\Web.config" />
     <Content Include="Views\Inscricoes\Stats.cshtml" />
+    <Content Include="Views\Shared\Settings.cshtml" />
+    <Content Include="Views\Shared\Menu.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
@@ -310,7 +315,7 @@
     <Content Include="Views\Desafio\Create.cshtml" />
     <Content Include="Views\Desafio\Edit.cshtml" />
     <Content Include="Views\Desafio\Delete.cshtml" />
-    <Content Include="Views\Desafio\Authenticate.cshtml" />
+    <Content Include="Views\Account\Authenticate.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Service Include="{508349B6-6B84-4DF5-91F0-309BEEBAD82D}" />

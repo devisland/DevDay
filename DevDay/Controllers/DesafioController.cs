@@ -1,13 +1,8 @@
 ﻿using System;
-using System.Globalization;
 using System.Linq;
-using System.Web;
 using System.Web.Mvc;
-using System.Web.Security;
 using DevDay.Authentication;
-using DevDay.Helpers;
 using DevDay.Models;
-using DevDay.Models.VM;
 
 namespace DevDay.Controllers
 {
@@ -17,44 +12,9 @@ namespace DevDay.Controllers
 
         private readonly bool _dataLimiteSubmissaoExcedido =
             DateTime.Now.CompareTo(new DateTime(2012, 10, 1, 23, 59, 59)) > 0;
-
-        public ActionResult Authenticate()
-        {
-            return View();
-        }
-
-        [HttpPost]
-        public ActionResult Authenticate(Credential credential)
-        {
-            if (ModelState.IsValid)
-            {
-                var user = _db.Users.FirstOrDefault
-                    (t => t.Email == credential.Email &&
-                          t.Password == credential.Password);
-
-                if (user == null)
-                {
-                    ViewBag.Message = "Credenciais inválidas";
-                    return View();
-                }
-
-                SaveCookie(user);
-
-                return RedirectToAction("Index");
-            }
-
-            ViewBag.Message = "Credenciais inválidas";
-            return View();
-        }
-
-        public ActionResult Logout()
-        {
-            FormsAuthentication.SignOut();
-            return View("Authenticate");
-        }
-
+       
         [Authorize]
-        public ViewResult Index()
+        public ActionResult Index()
         {
             var userID = ((CustomPrincipal)HttpContext.User).UserID;
 
@@ -63,9 +23,9 @@ namespace DevDay.Controllers
             var user = _db.Users.SingleOrDefault(t => t.ID == userID);
 
             if (user == null)
-                return View("Authenticate");
-
-            ViewBag.Username = user.Name;
+                return RedirectToAction("Authenticate", "Account");
+            
+            ViewBag.User = user;
 
             return View(submissions.ToList());
         }
@@ -81,16 +41,19 @@ namespace DevDay.Controllers
         public ActionResult Create(Submission submission)
         {
             if (_dataLimiteSubmissaoExcedido)
-                return View("Index");
+            {
+                TempData["message"] = "Data limite de submissão excedido";
+                return RedirectToAction("Index");
+            }
 
             const int LIMITE_SUBMISSOES = 10;
 
             var userID = ((CustomPrincipal)HttpContext.User).UserID;
-
+            
             if (_db.Submissions.Count(t => t.UserID == userID) >= LIMITE_SUBMISSOES)
             {
                 ViewBag.Message = "Limite de 10 submissões atingido";
-                return View("Index");
+                return RedirectToAction("Index");
             }
 
             submission.UserID = userID;
@@ -102,7 +65,7 @@ namespace DevDay.Controllers
                 _db.Submissions.Add(submission);
                 _db.SaveChanges();
 
-                return Request.Files.Count == 0 ? View("Index") : UploadFile(submission);
+                return Request.Files.Count == 0 ? RedirectToAction("Index") : UploadFile(submission);
             }
 
             return View(submission);
@@ -163,10 +126,12 @@ namespace DevDay.Controllers
         public ActionResult Edit(Submission submission)
         {
             if (_dataLimiteSubmissaoExcedido)
-                return View("Index");
+            {
+                TempData["message"] = "Data limite de submissão excedido";
+                return RedirectToAction("Index");
+            }
 
             var userID = ((CustomPrincipal)HttpContext.User).UserID;
-
             var submissionCheck = _db.Submissions.FirstOrDefault(t => t.UserID == userID &&
                                                                       t.ID == submission.ID);
             if (submissionCheck == null)
@@ -185,7 +150,7 @@ namespace DevDay.Controllers
                     partialdb.Entry(submission).Property(e => e.ModifiedOn).IsModified = true;
                     partialdb.SaveChanges();
                 }
-                return Request.Files.Count == 0 ? View("Index") : UploadFile(submission);
+                return Request.Files.Count == 0 ? RedirectToAction("Index") : UploadFile(submission);
             }
 
             return View(submission);
@@ -197,6 +162,10 @@ namespace DevDay.Controllers
             var userID = ((CustomPrincipal)HttpContext.User).UserID;
             var submission = _db.Submissions.SingleOrDefault(t => t.UserID == userID && t.ID == id);
 
+            var user = _db.Users.SingleOrDefault(t => t.ID == userID);
+
+            ViewBag.User = user;
+
             return submission == null ? View("Index") : View(submission);
         }
 
@@ -204,10 +173,13 @@ namespace DevDay.Controllers
         [HttpPost, ActionName("Delete")]
         public ActionResult DeleteConfirmed(int id)
         {
+            var userID = ((CustomPrincipal)HttpContext.User).UserID;
+            var user = _db.Users.SingleOrDefault(t => t.ID == userID);
+            ViewBag.User = user;
+
             if (_dataLimiteSubmissaoExcedido)
                 return View("Index");
 
-            var userID = ((CustomPrincipal)HttpContext.User).UserID;
             var submission = _db.Submissions.SingleOrDefault(t => t.UserID == userID && t.ID == id);
 
             if (submission != null)
@@ -217,50 +189,6 @@ namespace DevDay.Controllers
             }
 
             return RedirectToAction("Index");
-        }
-
-        [HttpPost]
-        public ActionResult SendPassword(FormCollection form)
-        {
-            var email = form["email"] != null ? form["email"].Trim() : string.Empty;
-
-            if (string.IsNullOrWhiteSpace(email))
-                return RedirectToAction("Authenticate");
-
-            var user = _db.Users.SingleOrDefault(t => t.Email.Equals(email));
-
-            if (user == null)
-            {
-                ViewBag.Message =
-                    "Seu e-mail não consta em nossos registros. Entre em contato conosco pelo e-mail devday@devisland.com.";
-                return View("Authenticate");
-            }
-
-            var emailEnviado = MailHelper.Send(user.Email, user.Password);
-
-            ViewBag.Message = emailEnviado
-                                  ? string.Format("Senha enviada para {0}. Confira sua caixa de entrada.", user.Email)
-                                  : "Ocorreu um problema ao tentar enviar o e-mail. Entre em contato conosco pelo e-mail devday@devisland.com";
-
-            return View("Authenticate");
-        }
-
-        private void SaveCookie(User user)
-        {
-            var ticket = new FormsAuthenticationTicket(1, user.Email,
-                DateTime.Now, DateTime.Now.AddMinutes(FormsAuthentication.Timeout.TotalMinutes),
-                true, user.ID.ToString(CultureInfo.InvariantCulture));
-
-            var hashedTicket = FormsAuthentication.Encrypt(ticket);
-            var cookie = new HttpCookie(FormsAuthentication.FormsCookieName, hashedTicket);
-
-            HttpContext.Response.Cookies.Add(cookie);
-        }
-
-        protected override void Dispose(bool disposing)
-        {
-            _db.Dispose();
-            base.Dispose(disposing);
         }
     }
 }

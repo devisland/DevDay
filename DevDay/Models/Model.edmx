@@ -4,7 +4,7 @@
   <edmx:Runtime>
     <!-- SSDL content -->
     <edmx:StorageModels>
-      <Schema Namespace="DevDay.Models.Store" Alias="Self" Provider="System.Data.SqlClient" ProviderManifestToken="2008" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns="http://schemas.microsoft.com/ado/2009/02/edm/ssdl">
+    <Schema Namespace="DevDay.Models.Store" Alias="Self" Provider="System.Data.SqlClient" ProviderManifestToken="2008" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns="http://schemas.microsoft.com/ado/2009/02/edm/ssdl">
         <EntityContainer Name="DevDayModelsStoreContainer">
           <EntitySet Name="Lectures" EntityType="DevDay.Models.Store.Lectures" store:Type="Tables" Schema="dbo" />
           <EntitySet Name="Schedules" EntityType="DevDay.Models.Store.Schedules" store:Type="Tables" Schema="dbo" />
@@ -89,6 +89,8 @@
           <Property Name="Name" Type="nvarchar" Nullable="false" MaxLength="50" />
           <Property Name="Email" Type="varchar" Nullable="false" MaxLength="50" />
           <Property Name="Password" Type="varchar" Nullable="false" MaxLength="50" />
+          <Property Name="IsCompetitor" Type="bit" Nullable="false" />
+          <Property Name="LastLoggedOn" Type="datetime2" />
         </EntityType>
         <Association Name="FK_Lectures_Speaker">
           <End Role="Speakers" Type="DevDay.Models.Store.Speakers" Multiplicity="1" />
@@ -150,8 +152,7 @@
             </Dependent>
           </ReferentialConstraint>
         </Association>
-      </Schema>
-    </edmx:StorageModels>
+      </Schema></edmx:StorageModels>
     <!-- CSDL content -->
     <edmx:ConceptualModels>
       <Schema Namespace="DevDay.Models" Alias="Self" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns="http://schemas.microsoft.com/ado/2008/09/edm">
@@ -234,6 +235,8 @@
           <Property Name="Password" Type="String" Nullable="false" MaxLength="50" Unicode="false" FixedLength="false" />
           <NavigationProperty Name="Submissions" Relationship="DevDay.Models.FK_Submissions_User" FromRole="Users" ToRole="Submissions" />
           <NavigationProperty Name="Lectures" Relationship="DevDay.Models.Schedules" FromRole="Users" ToRole="Lectures" />
+          <Property Type="Boolean" Name="IsCompetitor" Nullable="false" />
+          <Property Type="DateTime" Name="LastLoggedOn" Precision="7" />
         </EntityType>
         <Association Name="FK_Lectures_Speaker">
           <End Role="Speakers" Type="DevDay.Models.Speaker" Multiplicity="1" />
@@ -328,6 +331,8 @@
           <EntitySetMapping Name="Users">
             <EntityTypeMapping TypeName="DevDay.Models.User">
               <MappingFragment StoreEntitySet="Users">
+                <ScalarProperty Name="LastLoggedOn" ColumnName="LastLoggedOn" />
+                <ScalarProperty Name="IsCompetitor" ColumnName="IsCompetitor" />
                 <ScalarProperty Name="ID" ColumnName="ID" />
                 <ScalarProperty Name="Name" ColumnName="Name" />
                 <ScalarProperty Name="Email" ColumnName="Email" />

@@ -19,10 +19,7 @@
 </div>
 <div class="row">
     <div class="span12">
-        <p class="pull-right">
-            @Html.ActionLink("Minhas submissões", "Index", "Desafio", null, new { @class = "btn btn-primary btn-inverse" })
-            @Html.ActionLink("Logout", "Logout", "Desafio", null, new { @class = "btn btn-primary btn-inverse" })
-        </p>
+        @Html.Partial("Menu")
         @using (Html.BeginForm())
         {
             <p>
