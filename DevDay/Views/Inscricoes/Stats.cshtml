@@ -4,7 +4,6 @@
 
     var availableSeats = 200 - ViewBag.UsersCount;
 }
-
 @section js
 {
     <script src="@Url.Content("~/Scripts/gauge.min.js")" type="text/javascript"></script>
@@ -30,15 +29,21 @@
         gauge.set(parseInt(document.getElementById('usersCount').innerText)); // set actual value
     </script>
 }
-
 <fieldset>
     <legend>Stats</legend>
     <div>
-        <span id="usersCount">@ViewBag.UsersCount</span>/200 confirmados. @availableSeats vagas em aberto.
+        <span id="usersCount">@ViewBag.UsersCount</span>/200 confirmados. @availableSeats
+        vagas em aberto.
     </div>
     <div>
         <span id="submissionsCount">@ViewBag.SubmissionsCount</span> submissões
     </div>
+    <div>
+        <span id="usersCompetitorCount">@ViewBag.UsersCompetitorCount</span> competidores
+    </div>
+    <div>
+        <span id="activeUsersCount">@ViewBag.ActiveUsersCount</span> usuários fizeram logon
+    </div>
 </fieldset>
-
-<canvas id="mygauge"></canvas>
+<canvas id="mygauge">
+</canvas>

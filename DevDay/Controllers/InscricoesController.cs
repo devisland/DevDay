@@ -16,8 +16,10 @@ namespace DevDay.Controllers
         public ActionResult Stats()
         {
             ViewBag.UsersCount = _db.Users.Count();
+            ViewBag.UsersCompetitorCount = _db.Users.Count(t => t.IsCompetitor);
             ViewBag.SubmissionsCount = _db.Submissions.Count();
-
+            ViewBag.ActiveUsersCount = _db.Users.Count(t => t.LastLoggedOn != null);
+                
             return View();
         }
 

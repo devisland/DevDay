@@ -11,7 +11,7 @@ namespace DevDay.Controllers
         private readonly DevdayEntities _db = new DevdayEntities();
 
         private readonly bool _dataLimiteSubmissaoExcedido =
-            DateTime.Now.CompareTo(new DateTime(2012, 10, 1, 23, 59, 59)) > 0;
+            DateTime.Now.CompareTo(new DateTime(2012, 10, 10, 23, 59, 59)) > 0;
        
         [Authorize]
         public ActionResult Index()
