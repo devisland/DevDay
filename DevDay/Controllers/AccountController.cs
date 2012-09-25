@@ -54,6 +54,33 @@ namespace DevDay.Controllers
         }
 
         [Authorize]
+        public ActionResult ChangePassword()
+        {
+            return View();
+        }
+
+        [Authorize]
+        [HttpPost]
+        public ActionResult ChangePassword(Credential credential)
+        {
+            var userID = ((CustomPrincipal)HttpContext.User).UserID;
+            var loggedUser = _db.Users.SingleOrDefault(t => t.ID == userID);
+
+            if (loggedUser == null)
+            {
+                ViewBag.Message = "Credenciais inválidas";
+                return View("Authenticate");
+            }
+
+            loggedUser.Password = credential.Password;
+            _db.SaveChanges();
+
+            ViewBag.Message = "Senha alterada com sucesso.";
+
+            return View("ChangePassword");
+        }
+
+        [Authorize]
         [HttpPost]
         public ActionResult Update(User user)
         {

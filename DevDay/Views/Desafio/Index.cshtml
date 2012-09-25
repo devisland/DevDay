@@ -14,12 +14,17 @@
 <div class="row">
     <div class="span12">
         @Html.Partial("Menu")
+    </div>
+</div>
+<div class="row">
+    <div class="span12">
         <h2>Olá @string.Concat(ViewBag.User.Name, "!")</h2>
         <p>
-            Inscreva seu aplicativo para Windows 8 até dia <strong>1 de Outubro</strong>!
+            Inscreva seu aplicativo para Windows 8 até dia <span class="label label-important">10 de Outubro</span>
         </p>
-        <br />
-        @Html.Partial("Settings", (DevDay.Models.User)ViewBag.User)
+        <div class="well">
+            @Html.Partial("Settings", (DevDay.Models.User)ViewBag.User)
+        </div>
         @if (DateTime.Now.CompareTo(new DateTime(2012, 10, 10, 23, 59, 59)) > 0)
         {
             <div class="well alert alert-info">

@@ -1,5 +1,19 @@
-﻿<p class="pull-right">
-    <a class="btn btn-primary btn-inverse" href="@Url.Content("~/Content/download/RegrasOficiais.pdf")">Download das regras</a>
-    @Html.ActionLink("Minhas submissões", "Index", "Desafio", null, new { @class = "btn btn-primary btn-inverse" })
-    @Html.ActionLink("Logout", "Logout", "Account", null, new { @class = "btn btn-primary btn-inverse" })
-</p>
+﻿<div class="navbar pull-right">
+    <div class="navbar-inner">
+        <ul class="nav">
+            <li class="dropdown">
+                <a href="#" class="dropdown-toggle" data-toggle="dropdown">Minha conta
+                <b class="caret"></b>
+                </a>
+                <ul class="dropdown-menu">
+                    <li>@Html.ActionLink("Trocar a senha", "ChangePassword", "Account")</li>
+                    <li>@Html.ActionLink("Minhas submissões", "Index", "Desafio")</li>
+                </ul>
+            </li>
+            <li class="divider-vertical"></li>
+            <li><a href="@Url.Content("~/Content/download/RegrasOficiais.pdf")">Download das regras</a></li>
+            <li class="divider-vertical"></li>
+            <li>@Html.ActionLink("Logout", "Logout", "Account")</li>
+        </ul>
+    </div>
+</div>

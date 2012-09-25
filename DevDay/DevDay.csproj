@@ -271,6 +271,7 @@
     <Content Include="Views\Inscricoes\Stats.cshtml" />
     <Content Include="Views\Shared\Settings.cshtml" />
     <Content Include="Views\Shared\Menu.cshtml" />
+    <Content Include="Views\Account\ChangePassword.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
