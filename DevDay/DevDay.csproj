@@ -195,8 +195,6 @@
     <Content Include="Content\js\bootstrap-collapse.js" />
     <Content Include="Content\js\bootstrap-tab.js" />
     <Content Include="Content\js\galleria\plugins\facebook\loader.gif" />
-    <Content Include="Content\img\social-facebook-box-white-icon.png" />
-    <Content Include="Content\img\social-twitter-box-white-icon.png" />
     <Content Include="Content\js\bootstrap.js" />
     <Content Include="Content\js\bootstrap.min.js" />
     <Content Include="Content\js\contact.js" />
