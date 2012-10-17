@@ -45,16 +45,19 @@ see http://www.gnu.org/licenses/.
                 <li>@Html.ActionLink("Home", "Index", "Home")</li>
                 <li>@Html.ActionLink("Palestras", "Index", "Palestras")</li>
                 <li>@Html.ActionLink("Palestrantes", "Index", "Palestrantes")</li>
-                <li class="dropdown">
-                    <a class="dropdown-toggle"
-                        data-toggle="dropdown"
-                        href="#">Inscrições<b class="caret"></b>
-                    </a>
-                    <ul class="dropdown-menu">
-                        <li>@Html.ActionLink("Evento", "Index", "Inscricoes")</li>
-                        <li>@Html.ActionLink("Desafio", "Authenticate", "Account")</li>
-                    </ul>
-                </li>
+                <li>@Html.ActionLink("Inscrições", "Index", "Inscricoes")</li>
+                <!--
+                    <li class="dropdown">
+                        <a class="dropdown-toggle"
+                           data-toggle="dropdown"
+                           href="#">Inscrições<b class="caret"></b>
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li>@Html.ActionLink("Evento", "Index", "Inscricoes")</li>
+                            <li>@Html.ActionLink("Desafio", "Authenticate", "Account")</li>
+                        </ul>
+                    </li>
+                -->
                 <li>@Html.ActionLink("Local", "Index", "Local")</li>
                 <li>@Html.ActionLink("Agenda", "Index", "Agenda")</li>
                 <li>@Html.ActionLink("Patrocinadores", "Index", "Patrocinadores")</li>
